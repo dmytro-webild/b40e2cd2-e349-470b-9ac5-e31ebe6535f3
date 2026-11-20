@@ -6,15 +6,22 @@ export const CLINIC_IMAGES = {
   equipment: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176243552-lprouhpe.jpg",
   facialResult: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176243552-gieku2a8.jpg",
 
-  // New 5 photographic assets
+  // 2nd batch assets
   windowView: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470474-m2cac33c.jpg",
   moodboard: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470475-ijglkxbs.jpg",
   products: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470476-h3kh2ojj.jpg",
   prpPlasma: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470476-9vul3ope.jpg",
   facialCare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470477-d25ewqsf.jpg",
 
-  // Latest uploaded before/after asset
-  beforeAfterPores: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg"
+  // 3rd batch before/after asset
+  beforeAfterPores: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
+
+  // 4th batch (5 new official photos)
+  sesdermaProducts: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863012-vnwm1wit.jpg",
+  nanoNeedling: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863013-1vloanfo.jpg",
+  deepExtraction: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-bloxi2u1.jpg",
+  brandLogoSquare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-o03o9vgz.jpg",
+  clinicalProcedure: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-sxd8fsb5.jpg"
 } as const;
 
 export const GALLERY_ITEMS = [
@@ -24,6 +31,41 @@ export const GALLERY_ITEMS = [
     description: "Transformim i dukshëm nga poret e mbushura me pika të zeza në një hundë të pastër e të lëmuar. Rezultate reale klinike.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
     imageAlt: "Foto Para dhe Pas - Pastrimi i thellë i poreve në Skin Sence"
+  },
+  {
+    title: "Pastrim Mjekësor me Ekstraktor",
+    category: "Dermatologji Estetike",
+    description: "Eliminim me precizion mikro-mjekësor i komedoneve dhe poreve të bllokuara me doreza sterile e mjete profesionale.",
+    imageSrc: CLINIC_IMAGES.deepExtraction,
+    imageAlt: "Pastrimi i thellë i poreve me ekstraktor"
+  },
+  {
+    title: "Linja Sesderma & Medi-Derma",
+    category: "Produkte Dermato-Kozmetike",
+    description: "Formulime mjekësore Reti-Age, C-Vit, Factor G dhe Hidraderm Hyal për ushqimin dhe rinovimin e lëkurës.",
+    imageSrc: CLINIC_IMAGES.sesdermaProducts,
+    imageAlt: "Linja e produkteve mjekësore dermato-estetike Sesderma"
+  },
+  {
+    title: "Mezo & Nanoneedling",
+    category: "Rinovim i Avancuar",
+    description: "Penetrim i thellë i serumeve ushqyese përmes aparateve estetike me mikro-aplikues në lëkurë.",
+    imageSrc: CLINIC_IMAGES.nanoNeedling,
+    imageAlt: "Trajtimi me mikro-gjilpëra dhe nanoneedling në ballë"
+  },
+  {
+    title: "skinSence by Arsa Tota",
+    category: "Identiteti Zyrtar",
+    description: "Logoja dhe identiteti vizual i klinikës sonë private me stilin luksoz zi-kafe në Tiranë.",
+    imageSrc: CLINIC_IMAGES.brandLogoSquare,
+    imageAlt: "Logoja zyrtare skinSence by Arsa Tota"
+  },
+  {
+    title: "Kujdes Klinik Profesional",
+    category: "Infermiere me 10+ Vite Përvojë",
+    description: "Procedura të certifikuara estetike të realizuara me përkushtim, kujdes higjenik dhe rezultate natyrale.",
+    imageSrc: CLINIC_IMAGES.clinicalProcedure,
+    imageAlt: "Procedura klinike estetike në Skin Sence"
   },
   {
     title: "Pamja nga Klinika",

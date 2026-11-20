@@ -6,37 +6,44 @@ import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 const treatments = [
   {
     num: "01",
-    title: "Mezoterapia",
-    description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim.",
-    details: "Trajtim i rafinuar me produkte dermato-kozmetike premium me bio-kolagjen që ushqejnë shtresat e thella të lëkurës.",
-    imageSrc: CLINIC_IMAGES.products
+    title: "Mezoterapia & Nanoneedling",
+    description: "Mikroinjeksione dhe mikro-aplikime me vitamina, ceramide e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim.",
+    details: "Aplikim preciz i serumeve me aparaturë profesionale që penetrojnë thellë në shtresat dermale për rigjenerim maksimal.",
+    imageSrc: CLINIC_IMAGES.nanoNeedling
   },
   {
     num: "02",
-    title: "Lifting skulptural",
-    description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur.",
-    details: "Nxit forcimin e strukturës së fytyrës pa ndërhyrje invazive, duke ruajtur simetrinë dhe harmoninë natyrale.",
-    imageSrc: CLINIC_IMAGES.moodboard
+    title: "Pastrim i Thellë Mjekësor",
+    description: "Pastrim mikro-mjekësor me ekstraktor profesional për komedonet dhe poret e bllokuara.",
+    details: "Rregullim i sebumit dhe pastrim i thellë i hundës dhe zonës T pa dëmtuar barrierën mbrojtëse të lëkurës.",
+    imageSrc: CLINIC_IMAGES.deepExtraction
   },
   {
     num: "03",
+    title: "Dermato-Kozmetikë Sesderma",
+    description: "Kujdes klinik me linjat premium mjekësore Sesderma & Medi-Derma (Factor G, Reti-Age, C-Vit).",
+    details: "Trajtime të certifikuara që përmirësojnë teksturën, unifikojnë tonin dhe luftojnë shenjat e moshës apo hiperpigmentimit.",
+    imageSrc: CLINIC_IMAGES.sesdermaProducts
+  },
+  {
+    num: "04",
     title: "Trajtimi me Plazmë (PRP)",
     description: "Trajtime rinovuese me plazmë autologe për ton më të njëtrajtshëm e rigjenerim qelizor.",
     details: "Proces laboratorik me centrifugë mjekësore që përdor plazmën tuaj për stimulimin e kolagjenit natyral.",
     imageSrc: CLINIC_IMAGES.prpPlasma
   },
   {
-    num: "04",
-    title: "Kujdesi i fytyrës",
-    description: "Pastrim i thellë dhe ushqim i personalizuar me fototrajtim për të ruajtur freskinë e lëkurës.",
-    details: "Ritual kujdesi me produkte cilësore dhe teknologji me dritë për eliminimin e papastërtive dhe mbrojtjen e barrierës.",
-    imageSrc: CLINIC_IMAGES.facialCare
+    num: "05",
+    title: "Lifting Skulptural & Rinovim",
+    description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet e fytyrës për pamje natyrale e të ngritur.",
+    details: "Nxit forcimin e strukturës së fytyrës me mjete dhe teknika klinike pa ndërhyrje invazive.",
+    imageSrc: CLINIC_IMAGES.clinicalProcedure
   },
   {
-    num: "05",
-    title: "Konsultë estetike",
-    description: "Vlerësim i detajuar i lëkurës dhe plan individual për nevojat tuaja natyrale.",
-    details: "Analizë e imtësishme nga infermierja me 10+ vite përvojë klinike në ambientin tonë me pamje nga Tirana.",
+    num: "06",
+    title: "Konsultë Estetike me Infermieren",
+    description: "Vlerësim i detajuar i lëkurës dhe plan individual i personalizuar për nevojat tuaja.",
+    details: "Analizë e imtësishme nga infermierja me 10+ vite përvojë klinike në ambientin tonë privat me pamje nga Tirana.",
     imageSrc: CLINIC_IMAGES.windowView
   }
 ];
