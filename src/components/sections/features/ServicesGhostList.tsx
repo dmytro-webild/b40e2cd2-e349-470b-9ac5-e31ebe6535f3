@@ -55,15 +55,15 @@ const ServiceRow = ({ item, index }: { item: Service; index: number }) => {
 };
 
 const ServicesGhostList = ({
-  tag = "05 / Services",
+  tag = "02 / Ekspertiza jonë",
   items = [
-    { title: "Brand strategy", description: "Positioning, naming and a story your whole team can tell the same way." },
-    { title: "Visual identity", description: "Logo, type, colour and a system that holds from a favicon to a billboard." },
-    { title: "Web design", description: "Sites designed around one clear idea, page by page and state by state." },
-    { title: "Development", description: "Fast, accessible builds your team can edit without calling us." },
-    { title: "Motion", description: "Movement that explains the product and gives the brand a pulse." },
+    { title: "Mezoterapia", description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim." },
+    { title: "Lifting skulptural i fytyrës", description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur." },
+    { title: "Rinovimi i lëkurës", description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski." },
+    { title: "Trajtime kundër plakjes", description: "Rigjenerim i thellë dhe ushqim mjekësor për të reduktuar shenjat e kohës." },
+    { title: "Protokolle të personalizuara të lëkurës", description: "Analizë individuale e lëkurës dhe planifikim i detajuar për nevojat tuaja." },
   ],
-  description = "One connected process. A clear deliverable at every stage.",
+  description = "Çdo trajtim planifikohet rreth lëkurës sate dhe rezultatit që dëshironi.",
   ariaLabel,
   className,
 }: ServicesGhostListProps) => {

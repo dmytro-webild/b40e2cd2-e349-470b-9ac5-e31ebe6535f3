@@ -45,7 +45,7 @@ export default function Layout() {
 
       {/* Floating round green WhatsApp button fixed at bottom right */}
       <a
-        href="https://wa.me/355600000000"
+        href="https://wa.me/355696939612"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Na kontaktoni në WhatsApp"
@@ -96,10 +96,10 @@ export default function Layout() {
               <h3 className="font-mono text-xs uppercase tracking-wider text-[#C6A15B]">Trajtimet</h3>
               <ul className="flex flex-col gap-2 text-muted-foreground">
                 <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Mezoterapia</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Lifting skulptural</a></li>
+                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Lifting skulptural i fytyrës</a></li>
                 <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Rinovimi i lëkurës</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Kujdesi i fytyrës</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Konsultë estetike</a></li>
+                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Trajtime kundër plakjes</a></li>
+                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Protokolle të personalizuara të lëkurës</a></li>
               </ul>
             </div>
 
@@ -107,7 +107,9 @@ export default function Layout() {
             <div className="flex flex-col gap-3">
               <h3 className="font-mono text-xs uppercase tracking-wider text-[#C6A15B]">Kontakt & Informacion</h3>
               <p className="text-muted-foreground">Vendndodhja: Tiranë, Shqipëri</p>
-              <p className="text-muted-foreground">Orari: Me rezervim paraprak</p>
+              <p className="text-muted-foreground">Telefoni: +355696939612</p>
+              <p className="text-muted-foreground">Email: arsatota@icloud.com</p>
+              <p className="text-muted-foreground">Orari: E hënë – E premte 09:00 – 19:00, E shtunë 10:00 – 16:00, E diel Mbyllur</p>
               <p className="text-xs text-[#C6A15B] italic font-serif mt-1">
                 Konsulta është e detyrueshme për çdo procedurë.
               </p>

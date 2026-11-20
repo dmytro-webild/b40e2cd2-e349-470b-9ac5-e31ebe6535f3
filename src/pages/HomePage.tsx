@@ -7,14 +7,14 @@ import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import ModelStage from "@/components/kit/ModelStage";
 import LoaderWordmarkHandoff from "@/components/loaders/LoaderWordmarkHandoff";
-import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function HomePage() {
   return (
     <>
       <ModelStage
-        model={<SyringeModel color="#c6a15b" />}
+        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        scale={1.22}
         fixed={{
           sm: {
             y: 0.55,
@@ -39,9 +39,21 @@ export default function HomePage() {
 
       <div id="hero" data-webild-section="HeroShapeSplit" data-webild-section-id="HeroShapeSplit-1" data-section="hero" className="relative z-[45]">
         <HeroShapeSplit
-          tag="Estetikë Moderne • Tiranë"
-          title="Skin Sence by ARSA TOTA"
-          description="Një qasje luksoze dhe e rafinuar ndaj estetikës moderne, ku precizioni dhe eleganca takohen për të nxjerrë në pah bukurinë tuaj natyrale."
+          tag="Zbulo bukurinë tënde natyrale, me elegancë dhe përkujdesje."
+          title="Skin Sence"
+          description={
+            <div className="space-y-4 font-sans text-base md:text-lg leading-relaxed text-[#C6A15B]/90">
+              <p>
+                Skin Sence është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.
+              </p>
+              <p>
+                Çdo eksperiencë është konceptuar me vëmendje ndaj detajeve, duke ndërthurur teknikat bashkëkohore të estetikës me një qasje të personalizuar, për rezultate natyrale, harmonike dhe elegante.
+              </p>
+              <p className="font-serif italic text-lg md:text-xl text-[#C6A15B]">
+                Sepse bukuria e vërtetë nuk ndryshohet. Ajo përsoset.
+              </p>
+            </div>
+          }
           primaryButton={{
             text: "Rezervo konsultë",
             href: "/kontakt"
@@ -118,12 +130,12 @@ export default function HomePage() {
               <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
                 <img
                   src={CLINIC_IMAGES.prpPlasma}
-                  alt="Trajtimi me Plazmë PRP"
+                  alt="Lifting Skulptural i Fytyrës"
                   className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
-                  Trajtimi me Plazmë PRP
+                  Lifting Skulptural i Fytyrës
                 </div>
               </div>
             </div>
@@ -140,7 +152,7 @@ export default function HomePage() {
               description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim."
             },
             {
-              title: "Lifting skulptural",
+              title: "Lifting skulptural i fytyrës",
               description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur."
             },
             {
@@ -148,12 +160,12 @@ export default function HomePage() {
               description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski."
             },
             {
-              title: "Kujdesi i fytyrës",
-              description: "Pastrim i thellë dhe ushqim i personalizuar për të ruajtur freskinë e lëkurës."
+              title: "Trajtime kundër plakjes",
+              description: "Rigjenerim i thellë dhe ushqim mjekësor për të reduktuar shenjat e moshës."
             },
             {
-              title: "Konsultë estetike",
-              description: "Vlerësim i detajuar i lëkurës dhe plan individual për nevojat tuaja natyrale.",
+              title: "Protokolle të personalizuara të lëkurës",
+              description: "Analizë individuale e lëkurës dhe planifikim i detajuar për nevojat tuaja.",
               button: {
                 text: "Rezervo tani",
                 href: "/kontakt"
@@ -203,7 +215,7 @@ export default function HomePage() {
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.founderAlmaStage} alt="Arsa Tota në Kongresin Alma Lasers" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Alma "Beyond Trend"</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Kongresi Alma</span>
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
@@ -216,21 +228,21 @@ export default function HomePage() {
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.spongeTreatment} alt="Pastrim me Svungjer & Ringlight" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.spongeTreatment} alt="Kujdes Klinik" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Pastrim me Ringlight & Svungjer</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Procedurë me Ringlight</span>
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.clinicArchedWindow} alt="Studio me Dritare me Hark" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Studio Skin Sence & HydraFacial</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Studio Skin Sence</span>
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.facialCareDetailed} alt="Trajtim i Detajuar Fytyre" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Trajtim i Detajuar Mjekësor</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Trajtim i Personalizuar</span>
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
@@ -245,19 +257,19 @@ export default function HomePage() {
               <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Rezultate Para & Pas</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.sesdermaProducts} alt="Trajtime Kundër Plakjes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Linja Sesderma Mjekësore</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Trajtime Kundër Plakjes</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.deepExtraction} alt="Pastrim Mjekësor me Ekstraktor" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.deepExtraction} alt="Protokolle të Personalizuara" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pastrim Poreve me Ekstraktor</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Protokolle të Personalizuara</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.nanoNeedling} alt="Mezo & Nanoneedling" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.nanoNeedling} alt="Mezoterapia" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Nanoneedling & Mezo</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Mezoterapia</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.brandLogoSquare} alt="skinSence by Arsa Tota" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -286,9 +298,9 @@ export default function HomePage() {
               <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Produkte Premium</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.prpPlasma} alt="Trajtimi me Plazmë PRP" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.prpPlasma} alt="Lifting Skulptural i Fytyrës" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Plazmë PRP</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Lifting Skulptural</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.facialCare} alt="Kujdes i Avancuar" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -502,10 +514,10 @@ export default function HomePage() {
           servicesLabel="Zgjidhni trajtimin"
           services={[
             "Mezoterapia",
-            "Lifting skulptural",
-            "Rinovim lëkure",
-            "Kujdesi i fytyrës",
-            "Konsultë estetike"
+            "Lifting skulptural i fytyrës",
+            "Rinovimi i lëkurës",
+            "Trajtime kundër plakjes",
+            "Protokolle të personalizuara të lëkurës"
           ]}
           button={{
             text: "Rezervo tani"

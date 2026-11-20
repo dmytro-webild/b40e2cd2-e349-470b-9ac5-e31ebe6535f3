@@ -1,49 +1,41 @@
 import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
-import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 
 const treatments = [
   {
     num: "01",
-    title: "Mezoterapia & Nanoneedling",
-    description: "Mikroinjeksione dhe mikro-aplikime me vitamina, ceramide e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim.",
-    details: "Aplikim preciz i serumeve me aparaturë profesionale që penetrojnë thellë në shtresat dermale për rigjenerim maksimal.",
+    title: "Mezoterapia",
+    description: "Mikroinjeksione me vitamina, ceramide e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim natyral.",
+    details: "Aplikim preciz i serumeve ushqyese me aparaturë profesionale që penetrojnë thellë për rigjenerim të plotë.",
     imageSrc: CLINIC_IMAGES.nanoNeedling
   },
   {
     num: "02",
-    title: "Pastrim i Thellë Mjekësor",
-    description: "Pastrim mikro-mjekësor me ekstraktor profesional për komedonet dhe poret e bllokuara.",
-    details: "Rregullim i sebumit dhe pastrim i thellë i hundës dhe zonës T pa dëmtuar barrierën mbrojtëse të lëkurës.",
-    imageSrc: CLINIC_IMAGES.deepExtraction
-  },
-  {
-    num: "03",
-    title: "Dermato-Kozmetikë Sesderma",
-    description: "Kujdes klinik me linjat premium mjekësore Sesderma & Medi-Derma (Factor G, Reti-Age, C-Vit).",
-    details: "Trajtime të certifikuara që përmirësojnë teksturën, unifikojnë tonin dhe luftojnë shenjat e moshës apo hiperpigmentimit.",
-    imageSrc: CLINIC_IMAGES.sesdermaProducts
-  },
-  {
-    num: "04",
-    title: "Trajtimi me Plazmë (PRP)",
-    description: "Trajtime rinovuese me plazmë autologe për ton më të njëtrajtshëm e rigjenerim qelizor.",
-    details: "Proces laboratorik me centrifugë mjekësore që përdor plazmën tuaj për stimulimin e kolagjenit natyral.",
-    imageSrc: CLINIC_IMAGES.prpPlasma
-  },
-  {
-    num: "05",
-    title: "Lifting Skulptural & Rinovim",
+    title: "Lifting skulptural i fytyrës",
     description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet e fytyrës për pamje natyrale e të ngritur.",
     details: "Nxit forcimin e strukturës së fytyrës me mjete dhe teknika klinike pa ndërhyrje invazive.",
     imageSrc: CLINIC_IMAGES.clinicalProcedure
   },
   {
-    num: "06",
-    title: "Konsultë Estetike me Infermieren",
-    description: "Vlerësim i detajuar i lëkurës dhe plan individual i personalizuar për nevojat tuaja.",
-    details: "Analizë e imtësishme nga infermierja me 10+ vite përvojë klinike në ambientin tonë privat me pamje nga Tirana.",
+    num: "03",
+    title: "Rinovimi i lëkurës",
+    description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski natyrale.",
+    details: "Përmirëson teksturën e lëkurës dhe unifikon tonin përmes protokolleve të kujdesshme klinike.",
+    imageSrc: CLINIC_IMAGES.facialCareDetailed
+  },
+  {
+    num: "04",
+    title: "Trajtime kundër plakjes",
+    description: "Rigjenerim i thellë dhe ushqim mjekësor për të reduktuar shenjat e kohës dhe stimuluar kolagjenin.",
+    details: "Formulime premium dhe kujdes individual për të ruajtur elasticitetin dhe rininë e lëkurës.",
+    imageSrc: CLINIC_IMAGES.products
+  },
+  {
+    num: "05",
+    title: "Protokolle të personalizuara të lëkurës",
+    description: "Analizë individuale e lëkurës dhe planifikim i detajuar i përshtatur plotësisht me nevojat tuaja.",
+    details: "Vlerësim i imtësishëm nga infermierja me 10+ vite përvojë klinike në ambientin tonë privat në Tiranë.",
     imageSrc: CLINIC_IMAGES.windowView
   }
 ];
@@ -52,7 +44,8 @@ export default function ServicesPage() {
   return (
     <>
       <ModelStage
-        model={<SyringeModel color="#c6a15b" />}
+        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        scale={1.22}
         fixed={{
           sm: { y: 0.55, scale: 0.78 },
           scroll: { rotate: 540, tilt: 14, scale: 0.08, x: 0.05 }

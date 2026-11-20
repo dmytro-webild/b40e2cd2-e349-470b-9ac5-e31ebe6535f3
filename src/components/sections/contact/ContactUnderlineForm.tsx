@@ -19,16 +19,15 @@ type ContactUnderlineFormProps = {
 };
 
 const ContactUnderlineForm = ({
-  title = "Tell us what you're building.",
+  title = "Rezervoni konsultën tuaj",
   fields = [
-    { name: "name", label: "Your name", placeholder: "Your full name", required: true },
-    { name: "email", label: "Your email", type: "email", placeholder: "you@company.com", required: true },
-    { name: "company", label: "Company or website", placeholder: "Optional" },
-    { name: "message", label: "Project details", type: "textarea", placeholder: "What are you building, and what should change?", required: true },
+    { name: "name", label: "Emri dhe Mbiemri", placeholder: "Shkruani emrin tuaj të plotë", required: true },
+    { name: "email", label: "Email ose Telefon", type: "email", placeholder: "arsatota@icloud.com", required: true },
+    { name: "message", label: "Mesazhi juaj", type: "textarea", placeholder: "Tregoni më shumë për kërkesën tuaj...", required: false },
   ],
-  servicesLabel = "Service",
-  services = ["Brand identity", "Website", "Product design", "Motion", "Other"],
-  button = { text: "Send message" },
+  servicesLabel = "Trajtimi",
+  services = ["Mezoterapia", "Lifting skulptural i fytyrës", "Rinovimi i lëkurës", "Trajtime kundër plakjes", "Protokolle të personalizuara të lëkurës"],
+  button = { text: "Dërgo mesazhin" },
   ariaLabel,
   className,
 }: ContactUnderlineFormProps) => {

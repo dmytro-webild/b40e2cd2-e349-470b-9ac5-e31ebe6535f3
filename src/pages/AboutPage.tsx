@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
-import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 
 export default function AboutPage() {
   return (
     <>
       <ModelStage
-        model={<SyringeModel color="#c6a15b" />}
+        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        scale={1.22}
         fixed={{
           sm: { y: 0.55, scale: 0.78 },
           scroll: { rotate: 360, tilt: 10, scale: 0.08, x: 0.05 }
@@ -155,7 +155,7 @@ export default function AboutPage() {
                 <div className="p-6 bg-[#201510] border-t border-[#3b281d]">
                   <p className="font-serif text-xl text-foreground font-medium">Përvojë & Kongrese Botërore</p>
                   <p className="text-xs font-mono text-[#C6A15B] uppercase tracking-wider mt-1 font-semibold">
-                    Alma Lasers "Beyond Trend"
+                    Kongresi Ndërkombëtar Alma
                   </p>
                   <p className="text-xs text-foreground/80 mt-3 leading-relaxed font-sans">
                     Trajnime ndërkombëtare të nivelit të lartë në kongreset botërore, duke sjellë metodat më inovative për pacientët në Tiranë.
@@ -187,17 +187,17 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.sesdermaProducts} alt="Trajtime Kundër Plakjes" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Dermato-Kozmetikë Mjekësore</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Linja Sesderma & Medi-Derma</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Trajtime Kundër Plakjes</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.deepExtraction} alt="Pastrim i thellë me ekstraktor" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.deepExtraction} alt="Protokolle të Personalizuara" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Pastrim Mjekësor me Ekstraktor</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Eliminimi i Komedoneve & Poreve</p>
+                    <p className="font-serif text-lg text-foreground">Protokolle të Personalizuara</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kujdes Klinik i Detajuar</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
@@ -218,9 +218,9 @@ export default function AboutPage() {
 
               <div className="space-y-6 md:pt-8">
                 <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.spongeTreatment} alt="Pastrim me Svungjer & Ringlight" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.spongeTreatment} alt="Procedurë me Ringlight" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Procedurë me Ringlight & Svungjer</p>
+                    <p className="font-serif text-lg text-foreground">Procedurë me Ringlight</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kujdes Klinik i Detajuar</p>
                   </div>
                 </div>
@@ -232,9 +232,9 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.nanoNeedling} alt="Trajtimi me Nanoneedling" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.nanoNeedling} alt="Mezoterapia" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Aplikim Mezo & Nanoneedling</p>
+                    <p className="font-serif text-lg text-foreground">Aplikim i Mezoterapisë</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Penetrim i Thellë Qelizor</p>
                   </div>
                 </div>
@@ -248,8 +248,8 @@ export default function AboutPage() {
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.moodboard} alt="Moodboard Aesthetic" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Vashezat / Moodboard</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Light, Clean & Optimistic</p>
+                    <p className="font-serif text-lg text-foreground">Elegancë & Moodboard</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Estetikë Moderne</p>
                   </div>
                 </div>
               </div>
@@ -277,10 +277,10 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.prpPlasma} alt="Trajtimi me Plazmë PRP" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.prpPlasma} alt="Lifting Skulptural i Fytyrës" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Trajtimi me Plazmë (PRP)</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Centrifugë Mjekësore</p>
+                    <p className="font-serif text-lg text-foreground">Lifting Skulptural i Fytyrës</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Teknikë Jokirurgjikale</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">

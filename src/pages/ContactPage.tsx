@@ -2,13 +2,13 @@ import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
-import SyringeModel from "@/components/models/SyringeModel";
 
 export default function ContactPage() {
   return (
     <>
       <ModelStage
-        model={<SyringeModel color="#c6a15b" />}
+        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        scale={1.22}
         fixed={{
           sm: { y: 0.55, scale: 0.78 },
           scroll: { rotate: 540, tilt: 14, scale: 0.08, x: 0.05 }
@@ -52,7 +52,7 @@ export default function ContactPage() {
                     name: "email",
                     label: "Adresa e email-it ose telefoni",
                     type: "text",
-                    placeholder: "+355 6X XX XX XXX",
+                    placeholder: "+355696939612",
                     required: true
                   },
                   {
@@ -66,10 +66,10 @@ export default function ContactPage() {
                 servicesLabel="Zgjidhni trajtimin e dëshiruar"
                 services={[
                   "Mezoterapia",
-                  "Lifting skulptural",
-                  "Rinovim lëkure",
-                  "Kujdesi i fytyrës",
-                  "Konsultë estetike"
+                  "Lifting skulptural i fytyrës",
+                  "Rinovimi i lëkurës",
+                  "Trajtime kundër plakjes",
+                  "Protokolle të personalizuara të lëkurës"
                 ]}
                 button={{
                   text: "Dërgo kërkesën"
@@ -95,9 +95,19 @@ export default function ContactPage() {
 
                 <div>
                   <strong className="block font-mono text-xs uppercase tracking-wider text-[#C6A15B] mb-1">
+                    Kontakti
+                  </strong>
+                  <p>Telefon: +355696939612</p>
+                  <p>Email: arsatota@icloud.com</p>
+                </div>
+
+                <div>
+                  <strong className="block font-mono text-xs uppercase tracking-wider text-[#C6A15B] mb-1">
                     Orari i punës
                   </strong>
-                  <p>Me rezervim paraprak</p>
+                  <p>E hënë – E premte 09:00 – 19:00</p>
+                  <p>E shtunë 10:00 – 16:00</p>
+                  <p>E diel Mbyllur</p>
                 </div>
 
                 <div>
@@ -110,7 +120,7 @@ export default function ContactPage() {
 
               <div className="pt-4 border-t border-border/40">
                 <a
-                  href="https://wa.me/355600000000"
+                  href="https://wa.me/355696939612"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full inline-flex items-center justify-center gap-3 bg-[#25D366] text-white font-mono text-xs uppercase tracking-widest px-6 py-3 font-semibold hover:bg-[#20bd5a] transition-colors"
