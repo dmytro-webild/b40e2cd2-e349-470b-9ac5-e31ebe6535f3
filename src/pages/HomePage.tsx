@@ -83,24 +83,46 @@ export default function HomePage() {
             <div className="lg:col-span-7 grid grid-cols-2 gap-4">
               <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
                 <img
-                  src={CLINIC_IMAGES.brandingCard}
-                  alt="skinSence by Arsa Tota"
+                  src={CLINIC_IMAGES.windowView}
+                  alt="Pamje nga Klinika Skin Sence në Tiranë"
                   className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
-                  skinSence by Arsa Tota
+                  Pamja nga Klinika • Tiranë
                 </div>
               </div>
               <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
                 <img
-                  src={CLINIC_IMAGES.treatment}
-                  alt="Kujdesi estetik"
+                  src={CLINIC_IMAGES.moodboard}
+                  alt="Skin Sence Moodboard & Filozofia"
                   className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
                 <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
-                  Kujdes Klinik 10+ Vite
+                  Light & Clean Aesthetic
+                </div>
+              </div>
+              <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
+                <img
+                  src={CLINIC_IMAGES.products}
+                  alt="Produkte Dermato-Kozmetike Premium"
+                  className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
+                  Produkte Premium & Gua Sha
+                </div>
+              </div>
+              <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
+                <img
+                  src={CLINIC_IMAGES.prpPlasma}
+                  alt="Trajtimi me Plazmë PRP"
+                  className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
+                  Trajtimi me Plazmë PRP
                 </div>
               </div>
             </div>
@@ -145,26 +167,52 @@ export default function HomePage() {
         <GalleryWordPanels
           label="03 / Qasja jonë"
           title="Rezultate elegante dhe harmonike"
-          items={GALLERY_ITEMS.slice(0, 4)}
+          items={GALLERY_ITEMS.slice(0, 5)}
         />
       </div>
 
-      {/* Editorial Photo Strip showcasing all 5 clinic assets */}
-      <div id="editorial-photos" className="relative z-[45] py-16 border-y border-border/80 bg-[#160e0a]">
+      {/* Editorial Photo Showcase - All 10 Clinic Assets */}
+      <div id="editorial-photos" className="relative z-[45] py-20 border-y border-border/80 bg-[#160e0a]">
         <div className="mx-auto w-[var(--container)] px-[var(--gutter)]">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie Ekskluzive</p>
-              <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-1">Ambienti dhe Procedurat Skin Sence</h2>
+              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie Zyrtare Skin Sence</p>
+              <h2 className="font-serif text-3xl md:text-5xl text-foreground mt-2">Ambienti, Trajtimet dhe Produktet tona</h2>
             </div>
-            <p className="text-sm font-serif italic text-[#C6A15B] mt-2 md:mt-0">Tiranë, Shqipëri • 2026</p>
+            <p className="text-sm font-serif italic text-[#C6A15B] mt-2 md:mt-0">Tiranë, Shqipëri • Estetikë Moderne Zi-Kafe</p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pamja nga Klinika</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.moodboard} alt="Moodboard" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Moodboard Aesthetic</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.products} alt="Produkte Dermato-Kozmetike" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Produkte Premium</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.prpPlasma} alt="Trajtimi me Plazmë PRP" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Plazmë PRP</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.facialCare} alt="Kujdes i Avancuar" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Foto-Trajtim</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.interior} alt="Ambienti" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Ambienti</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Ambienti Luksoz</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.treatment} alt="Procedura" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -174,17 +222,17 @@ export default function HomePage() {
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.brandingCard} alt="Identiteti" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Branding</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">skinSence Card</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.equipment} alt="Pajisjet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pajisje</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pajisje Avancuara</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.facialResult} alt="Rezultati" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Rezultat</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Rezultat Natyral</span>
             </div>
           </div>
         </div>
@@ -293,7 +341,7 @@ export default function HomePage() {
               quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
               name: "Rina Shehu",
               role: "Kliente",
-              imageSrc: CLINIC_IMAGES.facialResult,
+              imageSrc: CLINIC_IMAGES.moodboard,
               imageAlt: "Rina Shehu"
             },
             {
@@ -307,7 +355,7 @@ export default function HomePage() {
               quote: "Rezultate të rafinuara dhe kujdes maksimal ndaj detajeve. Klinika më e mirë në Tiranë për trajtime estetike.",
               name: "Blerta Hysa",
               role: "Kliente",
-              imageSrc: CLINIC_IMAGES.interior,
+              imageSrc: CLINIC_IMAGES.windowView,
               imageAlt: "Blerta Hysa"
             }
           ]}

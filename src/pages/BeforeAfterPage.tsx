@@ -41,7 +41,7 @@ export default function BeforeAfterPage() {
             <GalleryWordPanels
               label="Rezultate estetike"
               title="Transformime harmonike"
-              items={GALLERY_ITEMS.slice(0, 4)}
+              items={GALLERY_ITEMS.slice(0, 6)}
             />
           </div>
 
@@ -54,21 +54,21 @@ export default function BeforeAfterPage() {
                   quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
                   name: "Rina Shehu",
                   role: "Kliente",
-                  imageSrc: CLINIC_IMAGES.facialResult,
+                  imageSrc: CLINIC_IMAGES.moodboard,
                   imageAlt: "Rina Shehu"
                 },
                 {
                   quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
                   name: "Dafina Krasniqi",
                   role: "Kliente",
-                  imageSrc: CLINIC_IMAGES.treatment,
+                  imageSrc: CLINIC_IMAGES.facialCare,
                   imageAlt: "Dafina Krasniqi"
                 },
                 {
                   quote: "Rezultate të rafinuara dhe kujdes maksimal ndaj detajeve. Klinika më e mirë në Tiranë për trajtime estetike.",
                   name: "Blerta Hysa",
                   role: "Kliente",
-                  imageSrc: CLINIC_IMAGES.interior,
+                  imageSrc: CLINIC_IMAGES.windowView,
                   imageAlt: "Blerta Hysa"
                 }
               ]}
