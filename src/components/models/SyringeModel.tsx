@@ -7,7 +7,7 @@ type SyringeModelProps = {
 
 const BARREL_RADIUS = 0.38;
 const BARREL_LENGTH = 2.8;
-const NEEDLE_LENGTH = 1.2;
+const NEEDLE_LENGTH = 1.95;
 
 export default function SyringeModel({ color = "#c6a15b" }: SyringeModelProps) {
   const f = useParts(() => finishes(color), [color]);
@@ -41,15 +41,22 @@ export default function SyringeModel({ color = "#c6a15b" }: SyringeModelProps) {
     const plungerTop = new THREE.CylinderGeometry(BARREL_RADIUS * 1.3, BARREL_RADIUS * 1.3, 0.08, 32);
     const plungerStopper = new THREE.CylinderGeometry(BARREL_RADIUS - 0.03, BARREL_RADIUS - 0.03, 0.3, 32);
 
-    // Metallic needle hub (luer lock cone)
+    // Metallic needle hub (luer lock cone & nozzle base)
     const hub = lathe([
-      [BARREL_RADIUS * 0.4, -BARREL_LENGTH / 2 - 0.15],
-      [BARREL_RADIUS * 0.35, -BARREL_LENGTH / 2 - 0.45],
-      [0.08, -BARREL_LENGTH / 2 - 0.55],
+      [BARREL_RADIUS * 0.45, -BARREL_LENGTH / 2 - 0.15],
+      [BARREL_RADIUS * 0.38, -BARREL_LENGTH / 2 - 0.45],
+      [BARREL_RADIUS * 0.22, -BARREL_LENGTH / 2 - 0.65],
+      [0.12, -BARREL_LENGTH / 2 - 0.75],
     ]);
 
-    // Needle cannula tip
-    const needle = new THREE.CylinderGeometry(0.02, 0.015, NEEDLE_LENGTH, 16);
+    // Distinct luer lock collar base for visual presence
+    const hubCollar = new THREE.CylinderGeometry(0.2, 0.24, 0.16, 24);
+
+    // Thickened, longer, clear needle cannula tip (solidly visible on mobile)
+    const needle = new THREE.CylinderGeometry(0.065, 0.048, NEEDLE_LENGTH, 24);
+
+    // Precise bevel cut tip for medical aesthetic realism
+    const needleTip = new THREE.ConeGeometry(0.048, 0.35, 24);
 
     // Graduation tick box
     const tick = new THREE.BoxGeometry(0.08, 0.02, 0.02);
@@ -62,7 +69,9 @@ export default function SyringeModel({ color = "#c6a15b" }: SyringeModelProps) {
       plungerTop,
       plungerStopper,
       hub,
+      hubCollar,
       needle,
+      needleTip,
       tick,
     };
   }, []);
@@ -99,10 +108,13 @@ export default function SyringeModel({ color = "#c6a15b" }: SyringeModelProps) {
       </group>
 
       <group name="part-needle">
-        {/* Hub nozzle */}
-        <mesh name="hub" geometry={g.hub} material={f.chrome} />
-        {/* Needle tip */}
-        <mesh name="needle" geometry={g.needle} material={f.chrome} position={[0, -BARREL_LENGTH / 2 - 0.55 - NEEDLE_LENGTH / 2, 0]} />
+        {/* Golden hub nozzle */}
+        <mesh name="hub" geometry={g.hub} material={f.paint} />
+        <mesh name="hubCollar" geometry={g.hubCollar} material={f.paint} position={[0, -BARREL_LENGTH / 2 - 0.42, 0]} />
+        {/* Main needle body with champagne gold finish */}
+        <mesh name="needle" geometry={g.needle} material={f.paint} position={[0, -BARREL_LENGTH / 2 - 0.75 - NEEDLE_LENGTH / 2, 0]} />
+        {/* Polished chrome bevel needle tip */}
+        <mesh name="needleTip" geometry={g.needleTip} material={f.chrome} position={[0, -BARREL_LENGTH / 2 - 0.75 - NEEDLE_LENGTH - 0.12, 0]} rotation={[Math.PI, 0, 0]} />
       </group>
     </group>
   );
