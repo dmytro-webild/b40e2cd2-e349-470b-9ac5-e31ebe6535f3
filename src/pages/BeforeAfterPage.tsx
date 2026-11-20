@@ -53,24 +53,24 @@ export default function BeforeAfterPage() {
               items={[
                 {
                   quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
-                  name: "Rina Shehu",
+                  name: "Mara Voss",
                   role: "Kliente",
                   imageSrc: CLINIC_IMAGES.moodboard,
-                  imageAlt: "Rina Shehu"
+                  imageAlt: "Mara Voss"
                 },
                 {
                   quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
-                  name: "Dafina Krasniqi",
+                  name: "Jonas Reid",
                   role: "Kliente",
                   imageSrc: CLINIC_IMAGES.facialCare,
-                  imageAlt: "Dafina Krasniqi"
+                  imageAlt: "Jonas Reid"
                 },
                 {
                   quote: "Rezultate të rafinuara dhe kujdes maksimal ndaj detajeve. Klinika më e mirë në Tiranë për trajtime estetike.",
-                  name: "Blerta Hysa",
+                  name: "Sanne Bakker",
                   role: "Kliente",
                   imageSrc: CLINIC_IMAGES.windowView,
-                  imageAlt: "Blerta Hysa"
+                  imageAlt: "Sanne Bakker"
                 }
               ]}
             />
