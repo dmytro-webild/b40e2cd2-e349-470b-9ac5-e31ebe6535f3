@@ -99,7 +99,14 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-6">
-                <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
+                <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.almaConference} alt="Arsa Tota në Kongresin Alma" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Trajnime Ndërkombëtare Alma</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kongrese & Ekspertizë Ndërkombëtare</p>
+                  </div>
+                </div>
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Dermato-Kozmetikë Mjekësore</p>
@@ -116,7 +123,7 @@ export default function AboutPage() {
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Pamja nga Klinika</p>
+                    <p className="font-serif text-lg text-foreground">Pamja nga Dritarja</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Skin Sence Tiranë</p>
                   </div>
                 </div>
@@ -130,6 +137,20 @@ export default function AboutPage() {
               </div>
 
               <div className="space-y-6 md:pt-8">
+                <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.spongeTreatment} alt="Pastrim me Svungjer & Ringlight" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Procedurë me Ringlight & Svungjer</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kujdes Klinik i Detajuar</p>
+                  </div>
+                </div>
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.facialCareDetailed} alt="Trajtim i Detajuar Fytyre" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Trajtim i Personalizuar</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Teknika Mjekësore Fytyre</p>
+                  </div>
+                </div>
                 <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.nanoNeedling} alt="Trajtimi me Nanoneedling" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
@@ -151,16 +172,23 @@ export default function AboutPage() {
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Light, Clean & Optimistic</p>
                   </div>
                 </div>
-                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.brandingCard} alt="skinSence Card" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Kartëvizita Zyrtare</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Detaje & Ekskluzivitet</p>
-                  </div>
-                </div>
               </div>
 
               <div className="space-y-6">
+                <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.clinicArchedWindow} alt="Studio me Dritare me Hark" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Studio me Dritare me Hark</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Ambienti Skin Sence Studio</p>
+                  </div>
+                </div>
+                <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.treatmentEquipmentClose} alt="Teknologji Mjekësore & Pajisje" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Teknologji Klinike Avancuar</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Pajisje Moderne Estetike</p>
+                  </div>
+                </div>
                 <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.clinicalProcedure} alt="Procedurë Estetike Klinike" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
@@ -173,13 +201,6 @@ export default function AboutPage() {
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Trajtimi me Plazmë (PRP)</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Centrifugë Mjekësore</p>
-                  </div>
-                </div>
-                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.facialCare} alt="Kujdes i Avancuar" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Foto-Trajtim & Hidratim</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kujdes i Fytyrës</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
