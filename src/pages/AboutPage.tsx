@@ -39,13 +39,13 @@ export default function AboutPage() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-border/80 pt-12">
             <div className="space-y-6 text-foreground/80 leading-relaxed text-base">
               <p className="text-lg text-foreground font-sans">
-                Skin Sence është një klinikë estetike private në Tiranë, e themeluar në vitin 2024.
+                Skin Sence është një klinikë estetike private në Tiranë, e themeluar nga infermierja estetike Arsa Tota.
               </p>
               <p>
-                Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional, individual dhe të saktë për çdo pacient.
+                Me më shumë se 10 vite përvojë klinike, Arsa Tota ofron kujdes profesional, individual dhe të saktë për çdo pacient që kërkon rigjallërimin natyral të lëkurës.
               </p>
               <p>
-                Stili ynë i punës bazohet në elegancë, diskrecion dhe ruajtjen e bukurisë natyrale. Ne besojmë në një qasje të rafinuar ku secili trajtim adaptohet me kujdes për të nxjerrë në pah karakteristikat tuaja unike.
+                Stili ynë i punës bazohet në elegancë, diskrecion dhe ruajtjen e harmonisë natyrale të fytyrës. Ne besojmë në një qasje të rafinuar ku secili trajtim adaptohet me precizion mjekësor.
               </p>
             </div>
 
@@ -56,21 +56,21 @@ export default function AboutPage() {
                   <span className="text-[#C6A15B] font-mono">01.</span>
                   <div>
                     <strong className="text-foreground block font-medium">Përvojë klinike 10+ vjeçare</strong>
-                    Kujdes profesional me njohuri të thella në estetikën moderne.
+                    Kujdes profesional nga infermierja estetike Arsa Tota me njohuri të thella mjekësore.
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#C6A15B] font-mono">02.</span>
                   <div>
-                    <strong className="text-foreground block font-medium">Konsultë e detajuar paraprake</strong>
-                    Çdo trajtim nis me analizë të imtësishme të lëkurës.
+                    <strong className="text-foreground block font-medium">Inovacion & Ekspertizë Ndërkombëtare</strong>
+                    Pjesëmarrëse në kongreset botërore të Alma Lasers me teknologjitë më të avancuara.
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="text-[#C6A15B] font-mono">03.</span>
                   <div>
                     <strong className="text-foreground block font-medium">Privatësi dhe ambient luksoz</strong>
-                    Hapësirë e qetë dhe diskrete në zemër të Tiranës.
+                    Hapësirë e qetë dhe diskrete në zemër të Tiranës për përkujdesjen tuaj vetjake.
                   </div>
                 </li>
               </ul>
@@ -79,8 +79,88 @@ export default function AboutPage() {
                   href="/kontakt"
                   className="inline-flex items-center justify-center bg-[#C6A15B] text-[#0D0806] font-mono text-xs uppercase tracking-widest px-6 py-3 font-semibold hover:bg-[#b08d49] transition-colors"
                 >
-                  Rezervo konsultë
+                  Rezervo konsultë me Arsa Tota
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Dedicated Section: Themeluesja Arsa Tota */}
+          <div id="themeluesja" data-webild-section="FounderSection" className="mt-20 border-t border-border/80 pt-16">
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
+              <div className="max-w-2xl">
+                <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B] mb-2">
+                  02 / Themeluesja & Ekspertja
+                </p>
+                <h2 className="font-serif text-3xl md:text-5xl font-normal text-foreground leading-tight">
+                  Arsa Tota
+                </h2>
+                <p className="text-lg md:text-xl text-[#C6A15B] font-serif italic mt-1 font-light">
+                  Infermiere Estetike & Themeluese e Skin Sence
+                </p>
+              </div>
+              <p className="text-sm font-sans text-foreground/80 max-w-md mt-4 md:mt-0 leading-relaxed">
+                "Kujdesi për lëkurën është arti i zbulimit të bukurisë natyrale përmes precizionit mjekësor dhe përkushtimit njerëzor."
+              </p>
+            </div>
+
+            {/* 3 Founder Portrait Cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group shadow-xl">
+                <div className="overflow-hidden aspect-[3/4]">
+                  <img
+                    src={CLINIC_IMAGES.founderRedCarpet}
+                    alt="Arsa Tota - Themeluesja e Skin Sence"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 bg-[#201510] border-t border-[#3b281d]">
+                  <p className="font-serif text-xl text-foreground font-medium">Arsa Tota</p>
+                  <p className="text-xs font-mono text-[#C6A15B] uppercase tracking-wider mt-1 font-semibold">
+                    Themeluese & Përfaqësuese
+                  </p>
+                  <p className="text-xs text-foreground/80 mt-3 leading-relaxed font-sans">
+                    Në tapetin e kuq të kongresit ndërkombëtar të teknologjisë estetike Alma, duke përfaqësuar me dinjitet standardet më të larta të klinikës Skin Sence.
+                  </p>
+                </div>
+              </div>
+
+              <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group shadow-xl">
+                <div className="overflow-hidden aspect-[3/4]">
+                  <img
+                    src={CLINIC_IMAGES.founderTreatmentCare}
+                    alt="Arsa Tota gjatë trajtimit estetik"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 bg-[#201510] border-t border-[#3b281d]">
+                  <p className="font-serif text-xl text-foreground font-medium">Kujdes Klinik me Ringlight</p>
+                  <p className="text-xs font-mono text-[#C6A15B] uppercase tracking-wider mt-1 font-semibold">
+                    Procedura me Precizion Mjekësor
+                  </p>
+                  <p className="text-xs text-foreground/80 mt-3 leading-relaxed font-sans">
+                    Arsa Tota gjatë ekzekutimit të procedurës me ndriçim profesional ringlight, higjienë absolute dhe përkushtim maksimal për rezultate harmonike.
+                  </p>
+                </div>
+              </div>
+
+              <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group shadow-xl">
+                <div className="overflow-hidden aspect-[3/4]">
+                  <img
+                    src={CLINIC_IMAGES.founderAlmaStage}
+                    alt="Arsa Tota në Kongresin Ndërkombëtar Alma Lasers"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6 bg-[#201510] border-t border-[#3b281d]">
+                  <p className="font-serif text-xl text-foreground font-medium">Përvojë & Kongrese Botërore</p>
+                  <p className="text-xs font-mono text-[#C6A15B] uppercase tracking-wider mt-1 font-semibold">
+                    Alma Lasers "Beyond Trend"
+                  </p>
+                  <p className="text-xs text-foreground/80 mt-3 leading-relaxed font-sans">
+                    Trajnime ndërkombëtare të nivelit të lartë në kongreset botërore, duke sjellë metodat më inovative për pacientët në Tiranë.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -89,7 +169,7 @@ export default function AboutPage() {
           <div className="mt-20 border-t border-border/80 pt-16">
             <div className="mb-10 flex flex-col md:flex-row md:items-end justify-between">
               <div>
-                <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie e Klinikës</p>
+                <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">03 / Galerie e Klinikës</p>
                 <h2 className="font-serif text-3xl md:text-5xl text-foreground font-normal mt-2">
                   Eleganca dhe precizioni në çdo detaj
                 </h2>
@@ -100,10 +180,10 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-6">
                 <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.almaConference} alt="Arsa Tota në Kongresin Alma" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e Skin Sence" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Trajnime Ndërkombëtare Alma</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Kongrese & Ekspertizë Ndërkombëtare</p>
+                    <p className="font-serif text-lg text-foreground">Arsa Tota — Themeluesja</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Në Kongresin Ndërkombëtar Alma</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">

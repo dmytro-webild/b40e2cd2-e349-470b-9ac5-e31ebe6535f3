@@ -28,7 +28,12 @@ export const CLINIC_IMAGES = {
   spongeTreatment: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-vtnzilvf.jpg",
   clinicArchedWindow: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-6qegjbrv.jpg",
   facialCareDetailed: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-i58opyps.jpg",
-  treatmentEquipmentClose: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-rwgjxg3k.jpg"
+  treatmentEquipmentClose: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-rwgjxg3k.jpg",
+
+  // 6th batch (Founder Arsa Tota official portraits & conference photos)
+  founderRedCarpet: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180229156-5h01a26q.jpg",
+  founderTreatmentCare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180229157-h3bikpmx.jpg",
+  founderAlmaStage: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180229158-5y6pz2ql.jpg"
 } as const;
 
 export const GALLERY_ITEMS = [
