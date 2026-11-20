@@ -99,6 +99,20 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-6">
+                <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Dermato-Kozmetikë Mjekësore</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Linja Sesderma & Medi-Derma</p>
+                  </div>
+                </div>
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.deepExtraction} alt="Pastrim i thellë me ekstraktor" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Pastrim Mjekësor me Ekstraktor</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Eliminimi i Komedoneve & Poreve</p>
+                  </div>
+                </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
@@ -109,37 +123,51 @@ export default function AboutPage() {
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.products} alt="Produkte Dermato-Kozmetike" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Dermato-Kozmetikë Premium</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Bio-Kolagjen & Gua Sha</p>
-                  </div>
-                </div>
-                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.interior} alt="Klinika Skin Sence" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
-                  <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Ambienti Luksoz</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Dizajn Dark-Brown</p>
+                    <p className="font-serif text-lg text-foreground">Produkte Premium & Gua Sha</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Bio-Kolagjen & Kujdes</p>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-6 md:pt-8">
+                <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.nanoNeedling} alt="Trajtimi me Nanoneedling" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Aplikim Mezo & Nanoneedling</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Penetrim i Thellë Qelizor</p>
+                  </div>
+                </div>
+                <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.brandLogoSquare} alt="skinSence by Arsa Tota" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">skinSence by Arsa Tota</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Identitet & Brand Zyrtar</p>
+                  </div>
+                </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.moodboard} alt="Moodboard Aesthetic" className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.moodboard} alt="Moodboard Aesthetic" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Vashezat / Moodboard</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Light, Clean & Optimistic</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.brandingCard} alt="skinSence by Arsa Tota" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.brandingCard} alt="skinSence Card" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">skinSence by Arsa Tota</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Identitet & Elegancë</p>
+                    <p className="font-serif text-lg text-foreground">Kartëvizita Zyrtare</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Detaje & Ekskluzivitet</p>
                   </div>
                 </div>
               </div>
 
               <div className="space-y-6">
+                <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.clinicalProcedure} alt="Procedurë Estetike Klinike" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Kujdes Klinik i Avancuar</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Procedurë e Certifikuar</p>
+                  </div>
+                </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
                   <img src={CLINIC_IMAGES.prpPlasma} alt="Trajtimi me Plazmë PRP" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
@@ -155,10 +183,10 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.treatment} alt="Kujdes Klinik" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.interior} alt="Klinika Skin Sence" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">Kujdesi Klinik</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">10+ Vite Përvojë</p>
+                    <p className="font-serif text-lg text-foreground">Ambienti Luksoz</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Dizajn Dark-Brown</p>
                   </div>
                 </div>
               </div>

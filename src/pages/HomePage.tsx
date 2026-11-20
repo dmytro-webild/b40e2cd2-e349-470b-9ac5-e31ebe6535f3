@@ -184,7 +184,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="group relative overflow-hidden border border-[#C6A15B]/40 bg-[#201510] aspect-[3/4] sm:col-span-2 lg:col-span-1">
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4] sm:col-span-2 lg:col-span-1">
               <img src={CLINIC_IMAGES.beforeAfterPores} alt="Rezultate Reale Para dhe Pas" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
@@ -192,6 +192,32 @@ export default function HomePage() {
                 <span className="text-[10px] font-mono text-[#C6A15B]/80 uppercase">Pastrim i Thellë</span>
               </div>
             </div>
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Linja Sesderma Mjekësore</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.deepExtraction} alt="Pastrim Mjekësor me Ekstraktor" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pastrim Poreve me Ekstraktor</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.nanoNeedling} alt="Mezo & Nanoneedling" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Nanoneedling & Mezo</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.brandLogoSquare} alt="skinSence by Arsa Tota" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">skinSence Brand Zyrtar</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.clinicalProcedure} alt="Procedurë Klinike" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Kujdes Klinik Profesional</span>
+            </div>
+
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
