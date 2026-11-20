@@ -52,11 +52,11 @@ export const GALLERY_ITEMS = [
     imageAlt: "Trajtimi i fytyrës me ringlight dhe svungjer klinik"
   },
   {
-    title: "Skin Sence Studio & Dritarja me Hark",
+    title: "SkinSence By ARSA TOTA Studio & Dritarja me Hark",
     category: "Ambienti i Klinikës",
     description: "Hapësirë e qetë klinike me ndriçim natyral prej dritares me hark dhe pajisjen me teknologji Hydro-Facial.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-6qegjbrv.jpg",
-    imageAlt: "Studio Skin Sence me dritare me hark dhe pajisje mjekësore"
+    imageAlt: "Studio SkinSence By ARSA TOTA me dritare me hark dhe pajisje mjekësore"
   },
   {
     title: "Trajtim i Detajuar Fytyre",
@@ -70,21 +70,21 @@ export const GALLERY_ITEMS = [
     category: "Performancë Klinike",
     description: "Aparatura moderne për trajtime me performancë të lartë dhe rezultate të shkëlqyera estetike.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-rwgjxg3k.jpg",
-    imageAlt: "Pajisje klinike estetike në Skin Sence"
+    imageAlt: "Pajisje klinike estetike në SkinSence By ARSA TOTA"
   },
   {
     title: "Rezultate Reale Para & Pas",
     category: "Rinovimi i Lëkurës",
     description: "Transformim i rafinuar dhe ton i njëtrajtshëm i lëkurës. Rezultate reale klinike.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
-    imageAlt: "Foto Para dhe Pas - Rinovimi i lëkurës në Skin Sence"
+    imageAlt: "Foto Para dhe Pas - Rinovimi i lëkurës në SkinSence By ARSA TOTA"
   },
   {
     title: "Protokolle të Personalizuara",
     category: "Dermatologji Estetike",
     description: "Kujdes mjekësor i detajuar me mjete profesionale dhe doreza sterile për lëkurë me shkëlqim natyral.",
     imageSrc: CLINIC_IMAGES.deepExtraction,
-    imageAlt: "Protokoll i personalizuar i lëkurës në Skin Sence"
+    imageAlt: "Protokoll i personalizuar i lëkurës në SkinSence By ARSA TOTA"
   },
   {
     title: "Trajtime Kundër Plakjes",
@@ -98,35 +98,35 @@ export const GALLERY_ITEMS = [
     category: "Rinovim i Avancuar",
     description: "Penetrim i thellë i serumeve ushqyese me vitamina e acid hialuronik për lëkurë të hidratuar.",
     imageSrc: CLINIC_IMAGES.nanoNeedling,
-    imageAlt: "Trajtimi i mezoterapisë në Skin Sence"
+    imageAlt: "Trajtimi i mezoterapisë në SkinSence By ARSA TOTA"
   },
   {
-    title: "skinSence by Arsa Tota",
+    title: "SkinSence By ARSA TOTA",
     category: "Identiteti Zyrtar",
     description: "Logoja dhe identiteti vizual i klinikës sonë private me stilin luksoz zi-kafe në Tiranë.",
     imageSrc: CLINIC_IMAGES.brandLogoSquare,
-    imageAlt: "Logoja zyrtare skinSence by Arsa Tota"
+    imageAlt: "Logoja zyrtare SkinSence By ARSA TOTA"
   },
   {
     title: "Kujdes Klinik Profesional",
     category: "Infermiere me 10+ Vite Përvojë",
     description: "Procedura të certifikuara estetike të realizuara me përkushtim, kujdes higjenik dhe rezultate natyrale.",
     imageSrc: CLINIC_IMAGES.clinicalProcedure,
-    imageAlt: "Procedura klinike estetike në Skin Sence"
+    imageAlt: "Procedura klinike estetike në SkinSence By ARSA TOTA"
   },
   {
     title: "Pamja nga Klinika",
-    category: "Skin Sence Tiranë",
+    category: "SkinSence By ARSA TOTA Tiranë",
     description: "Pamje panoramike e qytetit të Tiranës nga dritaret me hark të ambientit tonë privat e të qetë.",
     imageSrc: CLINIC_IMAGES.windowView,
-    imageAlt: "Pamje nga dritarja e klinikës Skin Sence në Tiranë"
+    imageAlt: "Pamje nga dritarja e klinikës SkinSence By ARSA TOTA në Tiranë"
   },
   {
     title: "Moodboard & Filozofi",
     category: "Elegancë Natyrale",
     description: "Qasje e pastër, e dritshme dhe optimiste për të nxjerrë në pah bukurinë natyrale të çdo pacienteje.",
     imageSrc: CLINIC_IMAGES.moodboard,
-    imageAlt: "Moodboard i estetikës moderne Skin Sence"
+    imageAlt: "Moodboard i estetikës moderne SkinSence By ARSA TOTA"
   },
   {
     title: "Dermato-Kozmetikë Premium",
@@ -151,10 +151,10 @@ export const GALLERY_ITEMS = [
   },
   {
     title: "Ambienti Luksoz",
-    category: "Skin Sence Tiranë",
+    category: "SkinSence By ARSA TOTA Tiranë",
     description: "Hapësirë me dizajn modern dark-brown, ndriçim të ngrohtë dhe ambient të dedikuar për përkujdesjen tuaj estetike.",
     imageSrc: CLINIC_IMAGES.interior,
-    imageAlt: "Ambienti i brendshëm i klinikës Skin Sence në Tiranë"
+    imageAlt: "Ambienti i brendshëm i klinikës SkinSence By ARSA TOTA në Tiranë"
   },
   {
     title: "Teknika Mjekësore",
@@ -165,23 +165,23 @@ export const GALLERY_ITEMS = [
   },
   {
     title: "Branding & Identiteti",
-    category: "skinSence by Arsa Tota",
+    category: "SkinSence By ARSA TOTA",
     description: "Detaje luksoze dhe përkushtim maksimal ndaj standardeve më të larta të cilësisë dhe diskrecionit.",
     imageSrc: CLINIC_IMAGES.brandingCard,
-    imageAlt: "Kartëvizita Skin Sence by Arsa Tota"
+    imageAlt: "Kartëvizita SkinSence By ARSA TOTA"
   },
   {
     title: "Precizion & Teknologji",
     category: "Pajisje Avancuara",
     description: "Pajisje estetike moderne për trajtime të sigurta, natyrale dhe pa ndërhyrje invazive.",
     imageSrc: CLINIC_IMAGES.equipment,
-    imageAlt: "Pajisjet mjekësore estetike në Skin Sence"
+    imageAlt: "Pajisjet mjekësore estetike në SkinSence By ARSA TOTA"
   },
   {
     title: "Bukuri Natyrale",
     category: "Rezultate Harmonike",
     description: "Lëkurë e freskët, e hidratuar dhe me shkëlqim të plotë natyral. Rezultatet ndryshojnë nga personi në person.",
     imageSrc: CLINIC_IMAGES.facialResult,
-    imageAlt: "Kujdesi për lëkurën në Skin Sence"
+    imageAlt: "Kujdesi për lëkurën në SkinSence By ARSA TOTA"
   }
 ];

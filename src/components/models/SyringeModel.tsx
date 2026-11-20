@@ -21,17 +21,17 @@ export default function SyringeModel() {
       ctx.lineWidth = 6;
       ctx.strokeRect(24, 24, 976, 464);
 
-      // Main Brand Title: "Skin Sence"
+      // Main Brand Title: "SkinSence"
       ctx.fillStyle = "#0A0A0A";
       ctx.font = "bold 92px Cormorant Garamond, Georgia, serif";
       ctx.textAlign = "center";
       ctx.textBaseline = "middle";
-      ctx.fillText("Skin Sence", 512, 210);
+      ctx.fillText("SkinSence", 512, 210);
 
-      // Subtitle: "B y   A r s a   T o t a"
+      // Subtitle: "B y   A R S A   T O T A"
       ctx.fillStyle = "#262626";
       ctx.font = "500 36px Cormorant Garamond, Georgia, serif";
-      ctx.fillText("B y   A r s a   T o t a", 512, 330);
+      ctx.fillText("B y   A R S A   T O T A", 512, 330);
     }
     const tex = new THREE.CanvasTexture(canvas);
     tex.colorSpace = THREE.SRGBColorSpace;

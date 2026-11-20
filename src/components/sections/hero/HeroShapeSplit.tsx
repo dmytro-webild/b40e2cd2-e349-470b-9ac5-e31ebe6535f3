@@ -56,8 +56,8 @@ const RollLink = ({ text, href, show, delay }: Button & { show: boolean; delay: 
 
 const HeroShapeSplit = ({
   tag = "Zbulo bukurinë tënde natyrale, me elegancë dhe përkujdesje.",
-  title = "Skin Sence",
-  description = "Skin Sence është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.",
+  title = "SkinSence By ARSA TOTA",
+  description = "SkinSence By ARSA TOTA është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.",
   primaryButton = { text: "Rezervo konsultë", href: "/kontakt" },
   secondaryButton = { text: "Shiko trajtimet", href: "/sherbimet" },
   scrollLabel = "Zbrisni më poshtë",
