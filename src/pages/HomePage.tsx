@@ -17,8 +17,8 @@ export default function HomePage() {
         model={<SyringeModel color="#c6a15b" />}
         fixed={{
           sm: {
-            y: 0.8,
-            scale: 0.7
+            y: 0.55,
+            scale: 0.78
           },
           scroll: {
             rotate: 540,
