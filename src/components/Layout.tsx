@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import NavbarMenuPill from "@/components/navbars/NavbarMenuPill";
 
 export default function Layout() {
@@ -83,11 +83,11 @@ export default function Layout() {
             <div className="flex flex-col gap-3">
               <h3 className="font-mono text-xs uppercase tracking-wider text-[#C6A15B]">Lundrimi</h3>
               <ul className="flex flex-col gap-2">
-                <li><a href="/" className="hover:text-[#C6A15B] transition-colors">Ballina</a></li>
-                <li><a href="/rreth-nesh" className="hover:text-[#C6A15B] transition-colors">Rreth nesh</a></li>
-                <li><a href="/sherbimet" className="hover:text-[#C6A15B] transition-colors">Shërbimet</a></li>
-                <li><a href="/para-dhe-pas" className="hover:text-[#C6A15B] transition-colors">Para dhe pas</a></li>
-                <li><a href="/kontakt" className="hover:text-[#C6A15B] transition-colors">Kontakt</a></li>
+                <li><Link to="/" className="hover:text-[#C6A15B] transition-colors">Ballina</Link></li>
+                <li><Link to="/rreth-nesh" className="hover:text-[#C6A15B] transition-colors">Rreth nesh</Link></li>
+                <li><Link to="/sherbimet" className="hover:text-[#C6A15B] transition-colors">Shërbimet</Link></li>
+                <li><Link to="/para-dhe-pas" className="hover:text-[#C6A15B] transition-colors">Para dhe pas</Link></li>
+                <li><Link to="/kontakt" className="hover:text-[#C6A15B] transition-colors">Kontakt</Link></li>
               </ul>
             </div>
 
@@ -95,11 +95,11 @@ export default function Layout() {
             <div className="flex flex-col gap-3">
               <h3 className="font-mono text-xs uppercase tracking-wider text-[#C6A15B]">Trajtimet</h3>
               <ul className="flex flex-col gap-2 text-muted-foreground">
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Mezoterapia</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Lifting skulptural i fytyrës</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Rinovimi i lëkurës</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Trajtime kundër plakjes</a></li>
-                <li><a href="/sherbimet" className="hover:text-foreground transition-colors">Protokolle të personalizuara të lëkurës</a></li>
+                <li><Link to="/sherbimet" className="hover:text-foreground transition-colors">Mezoterapia</Link></li>
+                <li><Link to="/sherbimet" className="hover:text-foreground transition-colors">Lifting skulptural i fytyrës</Link></li>
+                <li><Link to="/sherbimet" className="hover:text-foreground transition-colors">Rinovimi i lëkurës</Link></li>
+                <li><Link to="/sherbimet" className="hover:text-foreground transition-colors">Trajtime kundër plakjes</Link></li>
+                <li><Link to="/sherbimet" className="hover:text-foreground transition-colors">Protokolle të personalizuara të lëkurës</Link></li>
               </ul>
             </div>
 

@@ -1,5 +1,5 @@
 import { Component, lazy, Suspense, useEffect, type ErrorInfo, type ReactNode } from 'react'
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation, useNavigate } from 'react-router-dom'
 import { ReactLenis } from 'lenis/react'
 import { routes } from './routes'
 import Layout from './components/Layout'
@@ -210,12 +210,54 @@ function useExternalLinksNewTab() {
   }, [])
 }
 
+// Route same-origin relative links through React Router navigation instead of
+// allowing raw browser page reloads, avoiding S3 404/MissingSecurityHeader errors.
+function useInternalLinksNavigation() {
+  const navigate = useNavigate()
+  useEffect(() => {
+    if (typeof document === 'undefined') return
+    const onClick = (e: MouseEvent) => {
+      if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
+      const anchor = (e.target as HTMLElement | null)?.closest?.('a[href]') as
+        | HTMLAnchorElement
+        | null
+      if (!anchor || anchor.target === '_blank' || anchor.hasAttribute('download')) return
+      const raw = anchor.getAttribute('href') || ''
+      if (!raw || raw.startsWith('#') || raw.startsWith('javascript:') || raw.startsWith('tel:') || raw.startsWith('mailto:')) {
+        return
+      }
+      try {
+        const url = new URL(anchor.href, window.location.href)
+        if (url.origin === window.location.origin) {
+          e.preventDefault()
+          const path = url.pathname + url.search + url.hash
+          navigate(path)
+        }
+      } catch {
+        // ignore malformed URLs
+      }
+    }
+    document.addEventListener('click', onClick, true)
+    return () => document.removeEventListener('click', onClick, true)
+  }, [navigate])
+}
+
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
 function App() {
   useWebildSelectionBridge()
   useExternalLinksNewTab()
+  useInternalLinksNavigation()
   useRenderProbe()
   return (
     <ReactLenis root options={{ naiveDimensions: true }}>
+      <ScrollToTop />
       <RenderErrorBoundary>
         <Suspense
           fallback={
