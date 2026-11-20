@@ -18,8 +18,8 @@
 
   --background: #0e0907;
   --foreground: #f7f3ef;
-  --card: #201510;
-  --card-foreground: var(--foreground);
+  --card: #1c130e;
+  --card-foreground: #f7f3ef;
   --popover: var(--card);
   --popover-foreground: var(--foreground);
   --primary: var(--primary-cta);

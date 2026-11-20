@@ -6,6 +6,7 @@ import TestimonialPortraitQuote from "@/components/sections/testimonial/Testimon
 import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import ModelStage from "@/components/kit/ModelStage";
+import SyringeModel from "@/components/models/SyringeModel";
 import LoaderWordmarkHandoff from "@/components/loaders/LoaderWordmarkHandoff";
 import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
@@ -13,7 +14,7 @@ export default function HomePage() {
   return (
     <>
       <ModelStage
-        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        model={<SyringeModel />}
         scale={1.22}
         fixed={{
           sm: {
@@ -149,19 +150,35 @@ export default function HomePage() {
           items={[
             {
               title: "Mezoterapia",
-              description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim."
+              description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim.",
+              button: {
+                text: "Rezervo tani",
+                href: "/kontakt"
+              }
             },
             {
               title: "Lifting skulptural i fytyrës",
-              description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur."
+              description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur.",
+              button: {
+                text: "Rezervo tani",
+                href: "/kontakt"
+              }
             },
             {
               title: "Rinovimi i lëkurës",
-              description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski."
+              description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski.",
+              button: {
+                text: "Rezervo tani",
+                href: "/kontakt"
+              }
             },
             {
               title: "Trajtime kundër plakjes",
-              description: "Rigjenerim i thellë dhe ushqim mjekësor për të reduktuar shenjat e moshës."
+              description: "Rigjenerim i thellë dhe ushqim mjekësor për të reduktuar shenjat e moshës.",
+              button: {
+                text: "Rezervo tani",
+                href: "/kontakt"
+              }
             },
             {
               title: "Protokolle të personalizuara të lëkurës",
