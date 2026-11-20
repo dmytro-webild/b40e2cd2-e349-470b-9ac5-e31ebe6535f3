@@ -168,11 +168,11 @@ export default function HomePage() {
         <GalleryWordPanels
           label="03 / Qasja jonë"
           title="Rezultate elegante dhe harmonike"
-          items={GALLERY_ITEMS.slice(0, 5)}
+          items={GALLERY_ITEMS.slice(0, 8)}
         />
       </div>
 
-      {/* Editorial Photo Showcase - All 10 Clinic Assets */}
+      {/* Editorial Photo Showcase - All Official Clinic Assets */}
       <div id="editorial-photos" className="relative z-[45] py-20 border-y border-border/80 bg-[#160e0a]">
         <div className="mx-auto w-[var(--container)] px-[var(--gutter)]">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -184,13 +184,44 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4] sm:col-span-2 lg:col-span-1">
+            {/* Newest 5 Luxury Photos Featured at Top */}
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.almaConference} alt="Arsa Tota në Kongresin Ndërkombëtar Alma" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span className="text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Kongresi Alma</span>
+                <span className="text-[10px] font-mono text-[#C6A15B]/80 uppercase">Internacional</span>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.spongeTreatment} alt="Pastrim me Svungjer & Ringlight" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Pastrim me Ringlight & Svungjer</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.clinicArchedWindow} alt="Studio me Dritare me Hark" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Studio Skin Sence & HydraFacial</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.facialCareDetailed} alt="Trajtim i Detajuar Fytyre" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Trajtim i Detajuar Mjekësor</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.treatmentEquipmentClose} alt="Teknologji Mjekësore & Pajisje" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Teknologji Klinike Avancuar</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.beforeAfterPores} alt="Rezultate Reale Para dhe Pas" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
-                <span className="text-xs font-mono text-[#C6A15B] uppercase font-bold">Rezultate Reale Para & Pas</span>
-                <span className="text-[10px] font-mono text-[#C6A15B]/80 uppercase">Pastrim i Thellë</span>
-              </div>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Rezultate Para & Pas</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.sesdermaProducts} alt="Linja Sesderma & Medi-Derma" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />

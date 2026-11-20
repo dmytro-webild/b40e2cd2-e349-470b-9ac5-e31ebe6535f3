@@ -16,15 +16,57 @@ export const CLINIC_IMAGES = {
   // 3rd batch before/after asset
   beforeAfterPores: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
 
-  // 4th batch (5 new official photos)
+  // 4th batch (5 official photos)
   sesdermaProducts: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863012-vnwm1wit.jpg",
   nanoNeedling: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863013-1vloanfo.jpg",
   deepExtraction: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-bloxi2u1.jpg",
   brandLogoSquare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-o03o9vgz.jpg",
-  clinicalProcedure: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-sxd8fsb5.jpg"
+  clinicalProcedure: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795179863014-sxd8fsb5.jpg",
+
+  // 5th batch (5 new luxury clinic assets)
+  almaConference: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085488-rfoargls.jpg",
+  spongeTreatment: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-vtnzilvf.jpg",
+  clinicArchedWindow: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-6qegjbrv.jpg",
+  facialCareDetailed: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-i58opyps.jpg",
+  treatmentEquipmentClose: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-rwgjxg3k.jpg"
 } as const;
 
 export const GALLERY_ITEMS = [
+  {
+    title: "Trajnime Ndërkombëtare Alma",
+    category: "Përvojë & Kongrese",
+    description: "Infermierja Arsa Tota gjatë pjesëmarrjes në kongresin ndërkombëtar të teknologjisë estetike Alma Laser.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085488-rfoargls.jpg",
+    imageAlt: "Arsa Tota në Kongresin Ndërkombëtar Alma"
+  },
+  {
+    title: "Pastrim Mjekësor me Svungjer",
+    category: "Procedurë me Ringlight",
+    description: "Kujdes klinik preciz me ndriçim profesional ringlight dhe doreza sterile gjatë trajtimit të lëkurës.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-vtnzilvf.jpg",
+    imageAlt: "Trajtimi i fytyrës me ringlight dhe svungjer klinik"
+  },
+  {
+    title: "Skin Sence Studio & Dritarja me Hark",
+    category: "Ambienti i Klinikës",
+    description: "Hapësirë e qetë klinike me ndriçim natyral prej dritares me hark dhe pajisjen me teknologji Hydro-Facial.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085490-6qegjbrv.jpg",
+    imageAlt: "Studio Skin Sence me dritare me hark dhe pajisje mjekësore"
+  },
+  {
+    title: "Trajtim i Detajuar Fytyre",
+    category: "Kujdes i Personalizuar",
+    description: "Pastrim dhe rigjenerim i thellë me teknika estetike mjekësore të nivelit më të lartë.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-i58opyps.jpg",
+    imageAlt: "Procedurë e detajuar e kujdesit për lëkurën"
+  },
+  {
+    title: "Teknologji & Aparatura Avancuar",
+    category: "Performancë Klinike",
+    description: "Aparatura moderne për trajtime me performancë të lartë dhe rezultate të shkëlqyera estetike.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795180085491-rwgjxg3k.jpg",
+    imageAlt: "Pajisje klinike estetike në Skin Sence"
+  },
   {
     title: "Rezultate Reale Para & Pas",
     category: "Pastrim i Thellë i Poreve",

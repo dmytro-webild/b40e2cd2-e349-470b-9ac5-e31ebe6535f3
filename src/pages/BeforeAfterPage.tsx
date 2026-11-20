@@ -42,7 +42,7 @@ export default function BeforeAfterPage() {
             <GalleryWordPanels
               label="Rezultate estetike"
               title="Transformime harmonike"
-              items={GALLERY_ITEMS.slice(0, 8)}
+              items={GALLERY_ITEMS.slice(0, 12)}
             />
           </div>
 
