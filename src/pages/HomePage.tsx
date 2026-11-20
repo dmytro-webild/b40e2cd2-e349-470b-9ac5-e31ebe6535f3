@@ -7,13 +7,14 @@ import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import ModelStage from "@/components/kit/ModelStage";
 import LoaderWordmarkHandoff from "@/components/loaders/LoaderWordmarkHandoff";
+import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function HomePage() {
   return (
     <>
       <ModelStage
-        shape="ribbon"
+        model={<SyringeModel color="#c6a15b" />}
         fixed={{
           sm: {
             y: 0.8,
@@ -33,13 +34,13 @@ export default function HomePage() {
       />
 
       <LoaderWordmarkHandoff
-        brand="Skin Sence"
+        brand="Skin Sence by ARSA TOTA"
       />
 
       <div id="hero" data-webild-section="HeroShapeSplit" data-webild-section-id="HeroShapeSplit-1" data-section="hero" className="relative z-[45]">
         <HeroShapeSplit
           tag="Estetikë Moderne • Tiranë"
-          title="Skin Sence"
+          title="Skin Sence by ARSA TOTA"
           description="Një qasje luksoze dhe e rafinuar ndaj estetikës moderne, ku precizioni dhe eleganca takohen për të nxjerrë në pah bukurinë tuaj natyrale."
           primaryButton={{
             text: "Rezervo konsultë",
@@ -182,7 +183,15 @@ export default function HomePage() {
             <p className="text-sm font-serif italic text-[#C6A15B] mt-2 md:mt-0">Tiranë, Shqipëri • Estetikë Moderne Zi-Kafe</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div className="group relative overflow-hidden border border-[#C6A15B]/40 bg-[#201510] aspect-[3/4] sm:col-span-2 lg:col-span-1">
+              <img src={CLINIC_IMAGES.beforeAfterPores} alt="Rezultate Reale Para dhe Pas" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span className="text-xs font-mono text-[#C6A15B] uppercase font-bold">Rezultate Reale Para & Pas</span>
+                <span className="text-[10px] font-mono text-[#C6A15B]/80 uppercase">Pastrim i Thellë</span>
+              </div>
+            </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />

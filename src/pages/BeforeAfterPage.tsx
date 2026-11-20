@@ -2,13 +2,14 @@ import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
 import TestimonialPortraitQuote from "@/components/sections/testimonial/TestimonialPortraitQuote";
 import GalleryWordPanels from "@/components/sections/gallery/GalleryWordPanels";
+import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function BeforeAfterPage() {
   return (
     <>
       <ModelStage
-        shape="ribbon"
+        model={<SyringeModel color="#c6a15b" />}
         fixed={{
           sm: { y: 0.8, scale: 0.7 },
           scroll: { rotate: 450, tilt: 12, scale: 0.08, x: 0.05 }
