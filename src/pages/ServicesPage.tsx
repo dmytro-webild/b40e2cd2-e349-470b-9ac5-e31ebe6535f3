@@ -7,36 +7,36 @@ const treatments = [
     num: "01",
     title: "Mezoterapia",
     description: "Mikroinjeksione me vitamina e acid hialuronik për lëkurë të hidratuar dhe me shkëlqim.",
-    details: "Trajtim i rafinuar që ushqen shtresat e thella të lëkurës, duke rikthyer lagështinë dhe shkëlqimin natyral.",
-    imageSrc: CLINIC_IMAGES.facialResult
+    details: "Trajtim i rafinuar me produkte dermato-kozmetike premium me bio-kolagjen që ushqejnë shtresat e thella të lëkurës.",
+    imageSrc: CLINIC_IMAGES.products
   },
   {
     num: "02",
     title: "Lifting skulptural",
     description: "Teknikë jokirurgjikale që ngren dhe skulpturon konturet për pamje natyrale e të ngritur.",
     details: "Nxit forcimin e strukturës së fytyrës pa ndërhyrje invazive, duke ruajtur simetrinë dhe harmoninë natyrale.",
-    imageSrc: CLINIC_IMAGES.treatment
+    imageSrc: CLINIC_IMAGES.moodboard
   },
   {
     num: "03",
-    title: "Rinovimi i lëkurës",
-    description: "Trajtime rinovuese me teknika të avancuara për ton më të njëtrajtshëm e freski.",
-    details: "Rindërton cilësinë e sipërfaqes së lëkurës, duke zbutur teksturën dhe unifikuar pigmentin.",
-    imageSrc: CLINIC_IMAGES.equipment
+    title: "Trajtimi me Plazmë (PRP)",
+    description: "Trajtime rinovuese me plazmë autologe për ton më të njëtrajtshëm e rigjenerim qelizor.",
+    details: "Proces laboratorik me centrifugë mjekësore që përdor plazmën tuaj për stimulimin e kolagjenit natyral.",
+    imageSrc: CLINIC_IMAGES.prpPlasma
   },
   {
     num: "04",
     title: "Kujdesi i fytyrës",
-    description: "Pastrim i thellë dhe ushqim i personalizuar për të ruajtur freskinë e lëkurës.",
-    details: "Ritual kujdesi me produkte cilësore për eliminimin e papastërtive dhe mbrojtjen e barrierës kutanike.",
-    imageSrc: CLINIC_IMAGES.interior
+    description: "Pastrim i thellë dhe ushqim i personalizuar me fototrajtim për të ruajtur freskinë e lëkurës.",
+    details: "Ritual kujdesi me produkte cilësore dhe teknologji me dritë për eliminimin e papastërtive dhe mbrojtjen e barrierës.",
+    imageSrc: CLINIC_IMAGES.facialCare
   },
   {
     num: "05",
     title: "Konsultë estetike",
     description: "Vlerësim i detajuar i lëkurës dhe plan individual për nevojat tuaja natyrale.",
-    details: "Analizë e imtësishme nga infermierja me 10+ vite përvojë klinike për hartimin e rrugëtimit tuaj estetik.",
-    imageSrc: CLINIC_IMAGES.brandingCard
+    details: "Analizë e imtësishme nga infermierja me 10+ vite përvojë klinike në ambientin tonë me pamje nga Tirana.",
+    imageSrc: CLINIC_IMAGES.windowView
   }
 ];
 
