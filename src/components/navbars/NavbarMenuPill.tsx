@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { AnimatePresence, animate, motion, useMotionValue, useMotionValueEvent, useReducedMotion, useScroll } from "motion/react";
 import useMenuDialog from "@/components/kit/useMenuDialog";
 
@@ -56,7 +57,7 @@ const NavbarMenuPill = ({
         style={{ y: open ? "0%" : y }}
         className={`fixed inset-x-0 top-0 flex items-center justify-between py-[1.25rem] pl-[0.75rem] pr-[1.25rem] text-foreground lg:pl-[1.5rem] ${open ? "z-[56]" : "z-50"}`}
       >
-        <a href="/" className="flex min-w-0 items-center gap-[0.375rem]">
+        <Link to="/" className="flex min-w-0 items-center gap-[0.375rem]">
           {logoSrc ? (
             <img src={logoSrc} alt="" loading="eager" decoding="async" className="size-[1.125rem] object-contain" />
           ) : (
@@ -71,7 +72,7 @@ const NavbarMenuPill = ({
             <p className="truncate text-[length:var(--text-body)] leading-[1.5] tracking-[-0.025em]">{brand}</p>
             {mark && <p className="text-[length:var(--text-label)] leading-none text-accent">{mark}</p>}
           </div>
-        </a>
+        </Link>
 
         <button
           type="button"
@@ -108,7 +109,7 @@ const NavbarMenuPill = ({
             <ul className="mx-auto flex w-[var(--container)] flex-col gap-[clamp(0.25rem,1svh,0.75rem)] overflow-y-auto">
               {navItems.map((item, i) => (
                 <li key={`${i}-${item.href}`} className="border-b border-border pb-[clamp(0.25rem,1svh,0.75rem)]">
-                  <a href={item.href} onClick={() => setOpen(false)} className="group flex items-start gap-[clamp(0.75rem,2vw,1.5rem)]">
+                  <Link to={item.href} onClick={() => setOpen(false)} className="group flex items-start gap-[clamp(0.75rem,2vw,1.5rem)]">
                     <p className="pt-[0.6em] font-mono text-[length:var(--text-label)] text-muted-foreground">{String(i + 1).padStart(2, "0")}</p>
                     <div className="overflow-hidden pb-[0.15em] -mb-[0.15em]">
                       <motion.p
@@ -120,7 +121,7 @@ const NavbarMenuPill = ({
                         {item.name}
                       </motion.p>
                     </div>
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -131,9 +132,9 @@ const NavbarMenuPill = ({
                 transition={{ duration: 0.8, ease: EXPO_OUT, delay: 0.4 }}
                 className="mx-auto mt-auto flex w-[var(--container)] justify-between gap-[1rem] pt-[2rem] font-mono text-[length:var(--text-label)] uppercase"
               >
-                <a href={contact.href} className="btn-link normal-case">
+                <Link to={contact.href} className="btn-link normal-case">
                   {contact.text}
-                </a>
+                </Link>
                 <p className="text-muted-foreground">{brand}</p>
               </motion.div>
             )}
