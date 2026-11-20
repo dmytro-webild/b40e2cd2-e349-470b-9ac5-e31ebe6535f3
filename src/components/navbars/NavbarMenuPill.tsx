@@ -56,7 +56,7 @@ const NavbarMenuPill = ({
         style={{ y: open ? "0%" : y }}
         className={`fixed inset-x-0 top-0 flex items-center justify-between py-[1.25rem] pl-[0.75rem] pr-[1.25rem] text-foreground lg:pl-[1.5rem] ${open ? "z-[56]" : "z-50"}`}
       >
-        <a href="#" className="flex min-w-0 items-center gap-[0.375rem]">
+        <a href="/" className="flex min-w-0 items-center gap-[0.375rem]">
           {logoSrc ? (
             <img src={logoSrc} alt="" loading="eager" decoding="async" className="size-[1.125rem] object-contain" />
           ) : (

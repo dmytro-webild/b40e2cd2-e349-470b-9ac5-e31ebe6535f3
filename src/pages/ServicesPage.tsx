@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
+import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 
 const treatments = [
@@ -44,7 +45,7 @@ export default function ServicesPage() {
   return (
     <>
       <ModelStage
-        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        model={<SyringeModel />}
         scale={1.22}
         fixed={{
           sm: { y: 0.55, scale: 0.78 },

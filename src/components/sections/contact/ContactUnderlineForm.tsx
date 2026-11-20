@@ -35,9 +35,15 @@ const ContactUnderlineForm = ({
   const live = !reduce;
   const { ease, base, slow } = useKitMotion();
   const [active, setActive] = useState(0);
+  const [submitted, setSubmitted] = useState(false);
   const words = title.trim().split(/\s+/);
   const rise = (i: number) => ({ hidden: { opacity: 0, y: 24 }, shown: { opacity: 1, y: 0, transition: { duration: slow * 0.7, ease, delay: 0.1 + i * 0.06 } } });
   const wipe = (i: number) => ({ hidden: { clipPath: "inset(0 100% 0 0)" }, shown: { clipPath: "inset(0 0% 0 0)", transition: { duration: slow, ease, delay: 0.15 + i * 0.06 } } });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    setSubmitted(true);
+  };
 
   return (
     <section aria-label={ariaLabel ?? title} className={cn("relative py-[var(--section-space)] text-foreground", className)}>
@@ -60,13 +66,32 @@ const ContactUnderlineForm = ({
 
         <div className="grid gap-[clamp(1.5rem,3vw,3rem)] lg:grid-cols-12 lg:gap-[var(--gap)]">
 
-          <motion.form
-            onSubmit={(event) => event.preventDefault()}
-            initial={live ? "hidden" : false}
-            whileInView="shown"
-            viewport={{ once: true }}
-            className="flex flex-col gap-[clamp(1.5rem,2.4vw,2rem)] lg:col-span-8"
-          >
+          {submitted ? (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              className="lg:col-span-8 p-8 border border-accent/40 bg-accent/10 space-y-4"
+            >
+              <h3 className="font-serif text-2xl text-accent">Faleminderit!</h3>
+              <p className="font-sans text-base text-foreground/90">
+                Kërkesa juaj për konsultë u dërgua me sukses. Infermierja estetike Arsa Tota do t'ju kontaktojë së shpejti.
+              </p>
+              <button
+                type="button"
+                onClick={() => setSubmitted(false)}
+                className="btn-primary mt-4"
+              >
+                Dërgo një kërkesë tjetër
+              </button>
+            </motion.div>
+          ) : (
+            <motion.form
+              onSubmit={handleSubmit}
+              initial={live ? "hidden" : false}
+              whileInView="shown"
+              viewport={{ once: true }}
+              className="flex flex-col gap-[clamp(1.5rem,2.4vw,2rem)] lg:col-span-8"
+            >
             {fields.map((field, i) => (
               <motion.label key={field.name} variants={rise(i)} className="group flex flex-col gap-[0.75rem]">
                 <p className="font-mono text-[length:var(--text-label)] uppercase leading-[1.2] tracking-[var(--label-tracking)]">
@@ -136,6 +161,7 @@ const ContactUnderlineForm = ({
               </motion.div>
             )}
           </motion.form>
+          )}
         </div>
       </div>
     </section>
