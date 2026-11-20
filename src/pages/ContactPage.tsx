@@ -76,7 +76,7 @@ export default function ContactPage() {
               />
             </div>
 
-            <div className="bg-[#3B2A1E]/30 border border-[#3B2A1E] p-8 space-y-8 font-sans">
+            <div className="bg-[#201510]/80 border border-[#3b281d] p-8 space-y-8 font-sans">
               <div>
                 <h3 className="font-serif text-2xl text-[#C6A15B] mb-2">Skin Sence</h3>
                 <p className="text-sm text-foreground/70 italic font-serif">

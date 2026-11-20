@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
+import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 
 export default function AboutPage() {
   return (
@@ -34,7 +35,7 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-border/50 pt-12">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-border/80 pt-12">
             <div className="space-y-6 text-foreground/80 leading-relaxed text-base">
               <p className="text-lg text-foreground font-sans">
                 Skin Sence është një klinikë estetike private në Tiranë, e themeluar në vitin 2024.
@@ -47,7 +48,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="bg-[#3B2A1E]/30 border border-[#3B2A1E] p-8 space-y-6">
+            <div className="bg-[#201510]/80 border border-[#3b281d] p-8 space-y-6">
               <h3 className="font-serif text-2xl text-[#C6A15B]">Standardet tona klinike</h3>
               <ul className="space-y-4 font-sans text-sm text-foreground/80">
                 <li className="flex items-start gap-3">
@@ -75,10 +76,66 @@ export default function AboutPage() {
               <div className="pt-4 border-t border-border/40">
                 <a
                   href="/kontakt"
-                  className="inline-flex items-center justify-center bg-[#C6A15B] text-[#0F0F0F] font-mono text-xs uppercase tracking-widest px-6 py-3 font-semibold hover:bg-[#b08d49] transition-colors"
+                  className="inline-flex items-center justify-center bg-[#C6A15B] text-[#0D0806] font-mono text-xs uppercase tracking-widest px-6 py-3 font-semibold hover:bg-[#b08d49] transition-colors"
                 >
                   Rezervo konsultë
                 </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Authentic Clinic Gallery Grid */}
+          <div className="mt-20 border-t border-border/80 pt-16">
+            <div className="mb-10">
+              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie e Klinikës</p>
+              <h2 className="font-serif text-3xl md:text-5xl text-foreground font-normal mt-2">
+                Eleganca dhe precizioni në çdo detaj
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="space-y-6">
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.interior} alt="Klinika Skin Sence" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Ambienti Luksoz</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Skin Sence Tiranë</p>
+                  </div>
+                </div>
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.equipment} alt="Pajisjet" className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Pajisje të Avancuara</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Precizion Klinik</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-6 md:pt-8">
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.brandingCard} alt="skinSence by Arsa Tota" className="w-full h-96 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">skinSence by Arsa Tota</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Identitet & Elegancë</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-6">
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.treatment} alt="Kujdes Klinik" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Kujdesi Klinik</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">10+ Vite Përvojë</p>
+                  </div>
+                </div>
+                <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
+                  <img src={CLINIC_IMAGES.facialResult} alt="Rezultate Natyrale" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <div className="p-4 bg-[#201510]">
+                    <p className="font-serif text-lg text-foreground">Shkëlqimi Natyral</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Rezultate Harmonike</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

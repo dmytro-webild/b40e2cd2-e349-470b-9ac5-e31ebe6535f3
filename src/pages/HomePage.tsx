@@ -7,6 +7,7 @@ import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import ModelStage from "@/components/kit/ModelStage";
 import LoaderWordmarkHandoff from "@/components/loaders/LoaderWordmarkHandoff";
+import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function HomePage() {
   return (
@@ -53,33 +54,54 @@ export default function HomePage() {
         />
       </div>
 
-      <div id="about" data-webild-section="AboutSection" data-section="about" className="relative z-[45] py-20 bg-[#0F0F0F]">
+      <div id="about" data-webild-section="AboutSection" data-section="about" className="relative z-[45] py-20 bg-background">
         <div className="mx-auto w-[var(--container)] px-[var(--gutter)]">
-          <div className="border-t border-b border-border/60 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-4">
+          <div className="border-t border-b border-border/80 py-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div className="lg:col-span-5 space-y-6">
               <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">01 / Rreth klinikës</p>
               <h2 className="font-serif text-4xl md:text-5xl text-foreground font-normal leading-tight">
                 Sepse bukuria e vërtetë nuk ndryshohet.
-                <span className="block italic text-[#C6A15B]">Ajo përsoset.</span>
+                <span className="block italic text-[#C6A15B] mt-1">Ajo përsoset.</span>
               </h2>
-            </div>
-            <div className="space-y-6 text-foreground/80 font-sans text-base leading-relaxed">
-              <p>
-                Skin Sence është një klinikë estetike private në Tiranë, e themeluar në vitin 2024.
-              </p>
-              <p>
-                Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional, individual dhe të saktë për çdo pacient.
+              <p className="text-foreground/80 font-sans text-base leading-relaxed">
+                Skin Sence është një klinikë estetike private në Tiranë, e themeluar në vitin 2024. Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional, individual dhe të saktë për çdo pacient.
               </p>
               <p className="text-sm italic font-serif text-[#C6A15B]">
                 Stili ynë i punës bazohet në elegancë, diskrecion dhe ruajtjen e bukurisë natyrale.
               </p>
-              <div>
+              <div className="pt-2">
                 <a
                   href="/rreth-nesh"
                   className="inline-flex items-center justify-center bg-transparent border border-[#C6A15B] text-[#C6A15B] hover:bg-[#C6A15B]/10 font-mono text-xs uppercase tracking-widest px-6 py-3 font-semibold transition-colors"
                 >
                   Mësoni më shumë për ne
                 </a>
+              </div>
+            </div>
+
+            {/* Featured Image Grid from attached assets */}
+            <div className="lg:col-span-7 grid grid-cols-2 gap-4">
+              <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
+                <img
+                  src={CLINIC_IMAGES.brandingCard}
+                  alt="skinSence by Arsa Tota"
+                  className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
+                  skinSence by Arsa Tota
+                </div>
+              </div>
+              <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
+                <img
+                  src={CLINIC_IMAGES.treatment}
+                  alt="Kujdesi estetik"
+                  className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+                <div className="absolute bottom-3 left-3 right-3 text-xs font-mono uppercase text-[#C6A15B]">
+                  Kujdes Klinik 10+ Vite
+                </div>
               </div>
             </div>
           </div>
@@ -123,37 +145,49 @@ export default function HomePage() {
         <GalleryWordPanels
           label="03 / Qasja jonë"
           title="Rezultate elegante dhe harmonike"
-          items={[
-            {
-              title: "Hapësira",
-              category: "Ambienti luksoz",
-              description: "Hapësirë me ndriçim të ngrohtë dhe stil luksoz për përkujdesjen tuaj estetike në Tiranë.",
-              imageSrc: "https://img.b2bpic.net/free-photo/modern-office-space-with-futuristic-decor-furniture_23-2151797653.jpg",
-              imageAlt: "Modern office space with futuristic decor and furniture"
-            },
-            {
-              title: "Precizioni",
-              category: "Detajet elegante",
-              description: "Forma dhe konture të rafinuara me precizion të lartë dhe kujdes të personalizuar.",
-              imageSrc: "https://img.b2bpic.net/free-photo/front-view-argan-oil-arrangement_23-2148955759.jpg",
-              imageAlt: "Front view argan oil arrangement"
-            },
-            {
-              title: "Kujdesi",
-              category: "Qasja mjekësore",
-              description: "Profesionalizëm klinik me përvojë dhjetëvjeçare në fushën e estetikës moderne.",
-              imageSrc: "https://img.b2bpic.net/free-photo/pretty-woman-home-takes-photo-selfie-mirror-mobile-phone-stories-posts-social-media-wearing-black-summer-swimsuit_343596-6377.jpg",
-              imageAlt: "Pretty woman at home takes photo selfie in mirror"
-            },
-            {
-              title: "Harmonia",
-              category: "Kujdesi natyral",
-              description: "Rezultate harmonike që nxjerrin në pah bukurinë natyrale me elegancë dhe përkushtim. Rezultatet ndryshojnë nga personi në person.",
-              imageSrc: "https://img.b2bpic.net/free-photo/healthy-jojoba-oil-composition_23-2149047757.jpg",
-              imageAlt: "Healthy jojoba oil composition"
-            }
-          ]}
+          items={GALLERY_ITEMS.slice(0, 4)}
         />
+      </div>
+
+      {/* Editorial Photo Strip showcasing all 5 clinic assets */}
+      <div id="editorial-photos" className="relative z-[45] py-16 border-y border-border/80 bg-[#160e0a]">
+        <div className="mx-auto w-[var(--container)] px-[var(--gutter)]">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10">
+            <div>
+              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie Ekskluzive</p>
+              <h2 className="font-serif text-3xl md:text-4xl text-foreground mt-1">Ambienti dhe Procedurat Skin Sence</h2>
+            </div>
+            <p className="text-sm font-serif italic text-[#C6A15B] mt-2 md:mt-0">Tiranë, Shqipëri • 2026</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.interior} alt="Ambienti" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Ambienti</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.treatment} alt="Procedura" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Kujdes Klinik</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.brandingCard} alt="Identiteti" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Branding</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.equipment} alt="Pajisjet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Pajisje</span>
+            </div>
+            <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.facialResult} alt="Rezultati" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Rezultat</span>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div id="pricing" data-webild-section="PricingScopeColumns" data-webild-section-id="PricingScopeColumns-1" data-section="pricing" className="relative z-[45]">
@@ -259,21 +293,21 @@ export default function HomePage() {
               quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
               name: "Rina Shehu",
               role: "Kliente",
-              imageSrc: "https://img.b2bpic.net/free-photo/world-cancer-day-awareness-with-patient_23-2151249710.jpg",
+              imageSrc: CLINIC_IMAGES.facialResult,
               imageAlt: "Rina Shehu"
             },
             {
               quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
               name: "Dafina Krasniqi",
               role: "Kliente",
-              imageSrc: "https://img.b2bpic.net/free-photo/portrait-young-woman-lavander-field_1303-24143.jpg",
+              imageSrc: CLINIC_IMAGES.treatment,
               imageAlt: "Dafina Krasniqi"
             },
             {
               quote: "Rezultate të rafinuara dhe kujdes maksimal ndaj detajeve. Klinika më e mirë në Tiranë për trajtime estetike.",
               name: "Blerta Hysa",
               role: "Kliente",
-              imageSrc: "https://img.b2bpic.net/free-photo/closeup-cute-caucasian-young-girl-with-snowwhite-smile-dark-hair-white-background-people-free-time-concept_197531-31402.jpg",
+              imageSrc: CLINIC_IMAGES.interior,
               imageAlt: "Blerta Hysa"
             }
           ]}

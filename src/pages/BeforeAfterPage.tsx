@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
 import TestimonialPortraitQuote from "@/components/sections/testimonial/TestimonialPortraitQuote";
 import GalleryWordPanels from "@/components/sections/gallery/GalleryWordPanels";
+import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function BeforeAfterPage() {
   return (
@@ -40,36 +41,7 @@ export default function BeforeAfterPage() {
             <GalleryWordPanels
               label="Rezultate estetike"
               title="Transformime harmonike"
-              items={[
-                {
-                  title: "Mezoterapia",
-                  category: "Hidratim i thellë",
-                  description: "Rikthim i shkëlqimit natyral dhe hidratim intensiv i lëkurës. Rezultatet ndryshojnë nga personi në person.",
-                  imageSrc: "https://img.b2bpic.net/free-photo/modern-office-space-with-futuristic-decor-furniture_23-2151797653.jpg",
-                  imageAlt: "Mezoterapia trajtim"
-                },
-                {
-                  title: "Lifting Skulptural",
-                  category: "Skulpturim konturesh",
-                  description: "Forcim i linjave të fytyrës dhe ngritje natyrale. Rezultatet ndryshojnë nga personi në person.",
-                  imageSrc: "https://img.b2bpic.net/free-photo/front-view-argan-oil-arrangement_23-2148955759.jpg",
-                  imageAlt: "Lifting skulptural"
-                },
-                {
-                  title: "Rinovim Lëkure",
-                  category: "Freski e teksturës",
-                  description: "Rigjallërim i shtresave kutanike për ton më të njëtrajtshëm. Rezultatet ndryshojnë nga personi në person.",
-                  imageSrc: "https://img.b2bpic.net/free-photo/pretty-woman-home-takes-photo-selfie-mirror-mobile-phone-stories-posts-social-media-wearing-black-summer-swimsuit_343596-6377.jpg",
-                  imageAlt: "Rinovim lëkure"
-                },
-                {
-                  title: "Kujdesi i Fytyrës",
-                  category: "Ritual i personalizuar",
-                  description: "Pastrim i thellë dhe ushqim me përbërës aktivë. Rezultatet ndryshojnë nga personi në person.",
-                  imageSrc: "https://img.b2bpic.net/free-photo/healthy-jojoba-oil-composition_23-2149047757.jpg",
-                  imageAlt: "Kujdesi i fytyrës"
-                }
-              ]}
+              items={GALLERY_ITEMS.slice(0, 4)}
             />
           </div>
 
@@ -82,21 +54,21 @@ export default function BeforeAfterPage() {
                   quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
                   name: "Rina Shehu",
                   role: "Kliente",
-                  imageSrc: "https://img.b2bpic.net/free-photo/world-cancer-day-awareness-with-patient_23-2151249710.jpg",
+                  imageSrc: CLINIC_IMAGES.facialResult,
                   imageAlt: "Rina Shehu"
                 },
                 {
                   quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
                   name: "Dafina Krasniqi",
                   role: "Kliente",
-                  imageSrc: "https://img.b2bpic.net/free-photo/portrait-young-woman-lavander-field_1303-24143.jpg",
+                  imageSrc: CLINIC_IMAGES.treatment,
                   imageAlt: "Dafina Krasniqi"
                 },
                 {
                   quote: "Rezultate të rafinuara dhe kujdes maksimal ndaj detajeve. Klinika më e mirë në Tiranë për trajtime estetike.",
                   name: "Blerta Hysa",
                   role: "Kliente",
-                  imageSrc: "https://img.b2bpic.net/free-photo/closeup-cute-caucasian-young-girl-with-snowwhite-smile-dark-hair-white-background-people-free-time-concept_197531-31402.jpg",
+                  imageSrc: CLINIC_IMAGES.interior,
                   imageAlt: "Blerta Hysa"
                 }
               ]}
