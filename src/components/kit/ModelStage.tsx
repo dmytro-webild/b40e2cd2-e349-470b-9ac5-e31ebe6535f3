@@ -740,7 +740,7 @@ function Studio({ rim, light }: { rim?: string; light?: boolean }) {
 const NO_FINISHES: Finishes = {};
 const NO_HIDE: string[] = [];
 
-export default function ModelStage({ src = DEFAULT_SRC, model, node, size = 2.26, finishes, hide, shape, fixed, autoRotate = 9, float = 1, pointer = 1, dpr, scale = 1 }: ModelStageProps) {
+export default function ModelStage({ src = DEFAULT_SRC, model, node, size = 2.26, finishes, hide, shape, fixed, autoRotate = 0, float = 1, pointer = 1, dpr, scale = 1 }: ModelStageProps) {
   const [dprRange] = useState<[number, number]>(() => [1, dpr ? (typeof window !== "undefined" && window.innerWidth < 880 ? dpr.sm : dpr.lg) : 1.5]);
   const watch = src === MODEL_URL;
   node ??= watch ? "theWatch" : undefined;

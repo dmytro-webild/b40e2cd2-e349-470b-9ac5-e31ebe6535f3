@@ -63,11 +63,11 @@ export default function SyringeModel() {
     const labelGeo = new THREE.CylinderGeometry(0.788, 0.788, 1.45, 64, 1, true);
     labelGeo.translate(0, 1.25, 0);
 
-    // Rotate label texture UVs so title faces front (+Z / +X)
+    // Rotate label texture UVs so title faces front (+Z)
     const uvs = labelGeo.attributes.uv;
     for (let i = 0; i < uvs.count; i++) {
       let u = uvs.getX(i);
-      u = (u + 0.25) % 1.0;
+      u = (u + 0.5) % 1.0;
       uvs.setX(i, u);
     }
 

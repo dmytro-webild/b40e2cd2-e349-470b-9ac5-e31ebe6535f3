@@ -92,7 +92,7 @@ const HeroShapeSplit = ({
           <div className="relative z-10 flex flex-col items-start lg:w-1/2 lg:pr-[var(--gap)]">
             <div className="flex items-center gap-[0.875rem] font-mono text-[length:var(--text-label)] uppercase leading-[1.5]">
               <p className="sr-only">{tag}</p>
-              <div aria-hidden="true" className="flex whitespace-nowrap">
+              <div aria-hidden="true" className="flex flex-wrap">
                 {tagChars.map((char, i) => (
                   <motion.div
                     key={i}
