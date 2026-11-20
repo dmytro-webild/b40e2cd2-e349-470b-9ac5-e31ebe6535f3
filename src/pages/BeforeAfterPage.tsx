@@ -2,14 +2,14 @@ import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
 import TestimonialPortraitQuote from "@/components/sections/testimonial/TestimonialPortraitQuote";
 import GalleryWordPanels from "@/components/sections/gallery/GalleryWordPanels";
-import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES, GALLERY_ITEMS } from "@/utils/skinSenceImages";
 
 export default function BeforeAfterPage() {
   return (
     <>
       <ModelStage
-        model={<SyringeModel color="#c6a15b" />}
+        src="https://storage.googleapis.com/webild/default/models/serum-bottle/model.657623fd5442.glb"
+        scale={1.22}
         fixed={{
           sm: { y: 0.55, scale: 0.78 },
           scroll: { rotate: 450, tilt: 12, scale: 0.08, x: 0.05 }

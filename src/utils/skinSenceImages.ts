@@ -74,31 +74,31 @@ export const GALLERY_ITEMS = [
   },
   {
     title: "Rezultate Reale Para & Pas",
-    category: "Pastrim i Thellë i Poreve",
-    description: "Transformim i dukshëm nga poret e mbushura me pika të zeza në një hundë të pastër e të lëmuar. Rezultate reale klinike.",
+    category: "Rinovimi i Lëkurës",
+    description: "Transformim i rafinuar dhe ton i njëtrajtshëm i lëkurës. Rezultate reale klinike.",
     imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
-    imageAlt: "Foto Para dhe Pas - Pastrimi i thellë i poreve në Skin Sence"
+    imageAlt: "Foto Para dhe Pas - Rinovimi i lëkurës në Skin Sence"
   },
   {
-    title: "Pastrim Mjekësor me Ekstraktor",
+    title: "Protokolle të Personalizuara",
     category: "Dermatologji Estetike",
-    description: "Eliminim me precizion mikro-mjekësor i komedoneve dhe poreve të bllokuara me doreza sterile e mjete profesionale.",
+    description: "Kujdes mjekësor i detajuar me mjete profesionale dhe doreza sterile për lëkurë me shkëlqim natyral.",
     imageSrc: CLINIC_IMAGES.deepExtraction,
-    imageAlt: "Pastrimi i thellë i poreve me ekstraktor"
+    imageAlt: "Protokoll i personalizuar i lëkurës në Skin Sence"
   },
   {
-    title: "Linja Sesderma & Medi-Derma",
+    title: "Trajtime Kundër Plakjes",
     category: "Produkte Dermato-Kozmetike",
-    description: "Formulime mjekësore Reti-Age, C-Vit, Factor G dhe Hidraderm Hyal për ushqimin dhe rinovimin e lëkurës.",
+    description: "Formulime premium mjekësore për ushqimin, rigjenerimin dhe mbrojtjen e thellë të lëkurës.",
     imageSrc: CLINIC_IMAGES.sesdermaProducts,
-    imageAlt: "Linja e produkteve mjekësore dermato-estetike Sesderma"
+    imageAlt: "Linja e produkteve dermato-estetike me cilësi të lartë"
   },
   {
-    title: "Mezo & Nanoneedling",
+    title: "Mezoterapia",
     category: "Rinovim i Avancuar",
-    description: "Penetrim i thellë i serumeve ushqyese përmes aparateve estetike me mikro-aplikues në lëkurë.",
+    description: "Penetrim i thellë i serumeve ushqyese me vitamina e acid hialuronik për lëkurë të hidratuar.",
     imageSrc: CLINIC_IMAGES.nanoNeedling,
-    imageAlt: "Trajtimi me mikro-gjilpëra dhe nanoneedling në ballë"
+    imageAlt: "Trajtimi i mezoterapisë në Skin Sence"
   },
   {
     title: "skinSence by Arsa Tota",
@@ -123,7 +123,7 @@ export const GALLERY_ITEMS = [
   },
   {
     title: "Moodboard & Filozofi",
-    category: "Vashezat / Light & Clean",
+    category: "Elegancë Natyrale",
     description: "Qasje e pastër, e dritshme dhe optimiste për të nxjerrë në pah bukurinë natyrale të çdo pacienteje.",
     imageSrc: CLINIC_IMAGES.moodboard,
     imageAlt: "Moodboard i estetikës moderne Skin Sence"
@@ -136,11 +136,11 @@ export const GALLERY_ITEMS = [
     imageAlt: "Produkte dermato-estetike dhe maska Bio Collagen"
   },
   {
-    title: "Trajtimi me Plazmë (PRP)",
-    category: "Teknikë Laboratorike",
-    description: "Përgatitje me centrifugë mjekësore për stimulimin e rigjenerimit të lëkurës me plazmë autologe.",
+    title: "Lifting Skulptural i Fytyrës",
+    category: "Teknikë Jokirurgjikale",
+    description: "Struktura e fytyrës ngrihet dhe skulpturohet me precizion mjekësor për pamje natyrale.",
     imageSrc: CLINIC_IMAGES.prpPlasma,
-    imageAlt: "Koleksioni i plazmës në centrifugë për trajtimin PRP"
+    imageAlt: "Trajtimi i liftingut skulptural të fytyrës"
   },
   {
     title: "Foto-Trajtim & Hidratim",

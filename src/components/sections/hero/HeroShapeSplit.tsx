@@ -11,7 +11,7 @@ type Button = { text: string; href: string };
 type HeroShapeSplitProps = {
   tag?: string;
   title?: string;
-  description?: string;
+  description?: React.ReactNode;
   primaryButton?: Button;
   secondaryButton?: Button;
   scrollLabel?: string;
@@ -55,12 +55,12 @@ const RollLink = ({ text, href, show, delay }: Button & { show: boolean; delay: 
 };
 
 const HeroShapeSplit = ({
-  tag = "00 / Intro",
-  title = "Brands people remember.",
-  description = "Identity, websites and digital products for founders with something to say.",
-  primaryButton = { text: "Start a project", href: "#contact" },
-  secondaryButton = { text: "See our work", href: "#gallery" },
-  scrollLabel = "Scroll to discover",
+  tag = "Zbulo bukurinë tënde natyrale, me elegancë dhe përkujdesje.",
+  title = "Skin Sence",
+  description = "Skin Sence është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.",
+  primaryButton = { text: "Rezervo konsultë", href: "/kontakt" },
+  secondaryButton = { text: "Shiko trajtimet", href: "/sherbimet" },
+  scrollLabel = "Zbrisni më poshtë",
   introDelay = 0,
   ariaLabel,
   className,

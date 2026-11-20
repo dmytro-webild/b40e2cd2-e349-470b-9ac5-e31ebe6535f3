@@ -157,8 +157,8 @@ function Panel({ item, index, total, x, kit, reduce }: { item: Work; index: numb
 }
 
 export default function GalleryWordPanels({
-  label = "04 / Selected work",
-  title = "Ideas out in the world.",
+  label = "04 / Portofoli ynë",
+  title = "Rezultate elegante dhe harmonike",
   items = DEFAULT_ITEMS,
   ariaLabel,
   className,
@@ -168,7 +168,7 @@ export default function GalleryWordPanels({
   const x = useMotionValue(0);
 
   return (
-    <section aria-label={ariaLabel ?? "Selected work"} className={cn("relative overflow-x-clip text-foreground", className)}>
+    <section aria-label={ariaLabel ?? "Portofoli ynë"} className={cn("relative overflow-x-clip text-foreground", className)}>
       <HorizontalScrollSection
         compact
         progress={false}
