@@ -1,12 +1,13 @@
 import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
+import SyringeModel from "@/components/models/SyringeModel";
 import { CLINIC_IMAGES } from "@/utils/skinSenceImages";
 
 export default function AboutPage() {
   return (
     <>
       <ModelStage
-        shape="ribbon"
+        model={<SyringeModel color="#c6a15b" />}
         fixed={{
           sm: { y: 0.8, scale: 0.7 },
           scroll: { rotate: 360, tilt: 10, scale: 0.08, x: 0.05 }

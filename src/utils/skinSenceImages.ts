@@ -11,10 +11,20 @@ export const CLINIC_IMAGES = {
   moodboard: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470475-ijglkxbs.jpg",
   products: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470476-h3kh2ojj.jpg",
   prpPlasma: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470476-9vul3ope.jpg",
-  facialCare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470477-d25ewqsf.jpg"
+  facialCare: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176470477-d25ewqsf.jpg",
+
+  // Latest uploaded before/after asset
+  beforeAfterPores: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg"
 } as const;
 
 export const GALLERY_ITEMS = [
+  {
+    title: "Rezultate Reale Para & Pas",
+    category: "Pastrim i Thellë i Poreve",
+    description: "Transformim i dukshëm nga poret e mbushura me pika të zeza në një hundë të pastër e të lëmuar. Rezultate reale klinike.",
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3MMxWLUp3sVVfig1aLCXxRfOj3I/uploaded-1795176652197-wknzgsmv.jpg",
+    imageAlt: "Foto Para dhe Pas - Pastrimi i thellë i poreve në Skin Sence"
+  },
   {
     title: "Pamja nga Klinika",
     category: "Skin Sence Tiranë",

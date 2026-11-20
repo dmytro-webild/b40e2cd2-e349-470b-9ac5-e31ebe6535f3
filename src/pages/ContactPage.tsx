@@ -2,12 +2,13 @@ import { motion } from "motion/react";
 import ModelStage from "@/components/kit/ModelStage";
 import ContactUnderlineForm from "@/components/sections/contact/ContactUnderlineForm";
 import FaqHairlineIndex from "@/components/sections/faq/FaqHairlineIndex";
+import SyringeModel from "@/components/models/SyringeModel";
 
 export default function ContactPage() {
   return (
     <>
       <ModelStage
-        shape="ribbon"
+        model={<SyringeModel color="#c6a15b" />}
         fixed={{
           sm: { y: 0.8, scale: 0.7 },
           scroll: { rotate: 540, tilt: 14, scale: 0.08, x: 0.05 }
