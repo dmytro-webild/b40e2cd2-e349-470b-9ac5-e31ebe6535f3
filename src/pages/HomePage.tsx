@@ -184,7 +184,28 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {/* Newest 5 Luxury Photos Featured at Top */}
+            {/* Founder Arsa Tota Official Photos */}
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e Skin Sence" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span className="text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Themeluesja</span>
+                <span className="text-[10px] font-mono text-[#C6A15B]/80 uppercase">Kongresi Alma</span>
+              </div>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.founderTreatmentCare} alt="Arsa Tota me Ringlight & Svungjer" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Procedurë me Ringlight</span>
+            </div>
+
+            <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
+              <img src={CLINIC_IMAGES.founderAlmaStage} alt="Arsa Tota në Kongresin Alma Lasers" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Alma "Beyond Trend"</span>
+            </div>
+
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.almaConference} alt="Arsa Tota në Kongresin Ndërkombëtar Alma" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
