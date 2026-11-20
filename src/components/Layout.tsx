@@ -6,7 +6,7 @@ export default function Layout() {
     <div className="relative isolate min-h-svh flex flex-col bg-background text-foreground" data-button="default" data-card="filled" data-pattern="none">
       <header data-webild-section="Header">
         <NavbarMenuPill
-          brand="Skin Sence"
+          brand="SkinSence By ARSA TOTA"
           mark="•"
           navItems={[
             {
@@ -60,7 +60,7 @@ export default function Layout() {
         <div className="kit-glass mx-auto flex w-[var(--container)] flex-col px-[1.375rem] pt-[2.5rem] pb-[2rem] lg:px-[clamp(2rem,3.5vw,3.5rem)] lg:pt-[3.5rem]">
           {/* Main Footer Brand Header */}
           <div className="border-b border-border pb-8 mb-10">
-            <h2 className="text-4xl font-serif text-[#C6A15B] tracking-tight">Skin Sence</h2>
+            <h2 className="text-4xl font-serif text-[#C6A15B] tracking-tight">SkinSence By ARSA TOTA</h2>
             <p className="mt-2 text-sm text-foreground/80 italic font-serif">
               Sepse bukuria e vërtetë nuk ndryshohet. Ajo përsoset.
             </p>
@@ -72,7 +72,7 @@ export default function Layout() {
             <div className="flex flex-col gap-3">
               <h3 className="font-mono text-xs uppercase tracking-wider text-[#C6A15B]">Rreth Klinikës</h3>
               <p className="text-muted-foreground leading-relaxed">
-                Skin Sence është klinikë estetike private në Tiranë, e themeluar në vitin 2024.
+                SkinSence By ARSA TOTA është klinikë estetike private në Tiranë, e themeluar në vitin 2024.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional e individual.
@@ -118,7 +118,7 @@ export default function Layout() {
 
           {/* Bottom Copyright */}
           <div className="border-t border-border pt-6 flex flex-col sm:flex-row justify-between items-center text-xs font-mono text-muted-foreground gap-4">
-            <p>© 2026 Skin Sence. Të gjitha të drejtat e rezervuara.</p>
+            <p>© 2026 SkinSence By ARSA TOTA. Të gjitha të drejtat e rezervuara.</p>
             <p className="italic text-foreground/60">Tiranë, Shqipëri</p>
           </div>
         </div>

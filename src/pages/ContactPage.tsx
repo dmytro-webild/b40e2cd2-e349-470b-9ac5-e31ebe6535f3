@@ -80,7 +80,7 @@ export default function ContactPage() {
 
             <div className="bg-[#201510]/80 border border-[#3b281d] p-8 space-y-8 font-sans">
               <div>
-                <h3 className="font-serif text-2xl text-[#C6A15B] mb-2">Skin Sence</h3>
+                <h3 className="font-serif text-2xl text-[#C6A15B] mb-2">SkinSence By ARSA TOTA</h3>
                 <p className="text-sm text-foreground/70 italic font-serif">
                   Klinikë estetike private në Tiranë. Themeluar në vitin 2024.
                 </p>

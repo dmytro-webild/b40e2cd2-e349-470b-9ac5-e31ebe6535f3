@@ -35,17 +35,17 @@ export default function HomePage() {
       />
 
       <LoaderWordmarkHandoff
-        brand="Skin Sence by ARSA TOTA"
+        brand="SkinSence By ARSA TOTA"
       />
 
       <div id="hero" data-webild-section="HeroShapeSplit" data-webild-section-id="HeroShapeSplit-1" data-section="hero" className="relative z-[45]">
         <HeroShapeSplit
           tag="Zbulo bukurinë tënde natyrale, me elegancë dhe përkujdesje."
-          title="Skin Sence"
+          title="SkinSence By ARSA TOTA"
           description={
             <div className="space-y-4 font-sans text-base md:text-lg leading-relaxed text-[#C6A15B]/90">
               <p>
-                Skin Sence është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.
+                SkinSence By ARSA TOTA është një hapësirë e dedikuar estetikës moderne, ku profesionalizmi, precizioni dhe kujdesi i personalizuar bashkohen për të nxjerrë në pah bukurinë tënde natyrale.
               </p>
               <p>
                 Çdo eksperiencë është konceptuar me vëmendje ndaj detajeve, duke ndërthurur teknikat bashkëkohore të estetikës me një qasje të personalizuar, për rezultate natyrale, harmonike dhe elegante.
@@ -78,7 +78,7 @@ export default function HomePage() {
                 <span className="block italic text-[#C6A15B] mt-1">Ajo përsoset.</span>
               </h2>
               <p className="text-foreground/80 font-sans text-base leading-relaxed">
-                Skin Sence është një klinikë estetike private në Tiranë, e themeluar në vitin 2024. Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional, individual dhe të saktë për çdo pacient.
+                SkinSence By ARSA TOTA është një klinikë estetike private në Tiranë, e themeluar në vitin 2024. Infermierja me më shumë se 10 vite përvojë klinike ofron kujdes profesional, individual dhe të saktë për çdo pacient.
               </p>
               <p className="text-sm italic font-serif text-[#C6A15B]">
                 Stili ynë i punës bazohet në elegancë, diskrecion dhe ruajtjen e bukurisë natyrale.
@@ -98,7 +98,7 @@ export default function HomePage() {
               <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
                 <img
                   src={CLINIC_IMAGES.windowView}
-                  alt="Pamje nga Klinika Skin Sence në Tiranë"
+                  alt="Pamje nga Klinika SkinSence By ARSA TOTA në Tiranë"
                   className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
@@ -109,7 +109,7 @@ export default function HomePage() {
               <div className="relative group overflow-hidden border border-[#3b281d] bg-[#201510]">
                 <img
                   src={CLINIC_IMAGES.moodboard}
-                  alt="Skin Sence Moodboard & Filozofia"
+                  alt="SkinSence By ARSA TOTA Moodboard & Filozofia"
                   className="w-full h-64 md:h-80 object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
@@ -206,7 +206,7 @@ export default function HomePage() {
         <div className="mx-auto w-[var(--container)] px-[var(--gutter)]">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
             <div>
-              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie Zyrtare Skin Sence</p>
+              <p className="font-mono text-xs uppercase tracking-widest text-[#C6A15B]">Galerie Zyrtare SkinSence By ARSA TOTA</p>
               <h2 className="font-serif text-3xl md:text-5xl text-foreground mt-2">Ambienti, Trajtimet dhe Produktet tona</h2>
             </div>
             <p className="text-sm font-serif italic text-[#C6A15B] mt-2 md:mt-0">Tiranë, Shqipëri • Estetikë Moderne Zi-Kafe</p>
@@ -215,7 +215,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Founder Arsa Tota Official Photos */}
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e Skin Sence" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e SkinSence By ARSA TOTA" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
               <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
                 <span className="text-xs font-mono text-[#C6A15B] uppercase font-bold">Arsa Tota • Themeluesja</span>
@@ -253,7 +253,7 @@ export default function HomePage() {
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.clinicArchedWindow} alt="Studio me Dritare me Hark" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-85" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Studio Skin Sence</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase font-bold">Studio SkinSence By ARSA TOTA</span>
             </div>
 
             <div className="group relative overflow-hidden border border-[#C6A15B] bg-[#201510] aspect-[3/4]">
@@ -289,9 +289,9 @@ export default function HomePage() {
               <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">Mezoterapia</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
-              <img src={CLINIC_IMAGES.brandLogoSquare} alt="skinSence by Arsa Tota" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+              <img src={CLINIC_IMAGES.brandLogoSquare} alt="SkinSence By ARSA TOTA" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">skinSence Brand Zyrtar</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">SkinSence By ARSA TOTA Brand Zyrtar</span>
             </div>
             <div className="group relative overflow-hidden border border-[#C6A15B]/50 bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.clinicalProcedure} alt="Procedurë Klinike" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -338,7 +338,7 @@ export default function HomePage() {
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.brandingCard} alt="Identiteti" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-transparent to-transparent opacity-80" />
-              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">skinSence Card</span>
+              <span className="absolute bottom-3 left-3 text-xs font-mono text-[#C6A15B] uppercase">SkinSence By ARSA TOTA Card</span>
             </div>
             <div className="group relative overflow-hidden border border-[#3b281d] bg-[#201510] aspect-[3/4]">
               <img src={CLINIC_IMAGES.equipment} alt="Pajisjet" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
@@ -461,7 +461,7 @@ export default function HomePage() {
               imageAlt: "Mara Voss"
             },
             {
-              quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
+              quote: "SkinSence By ARSA TOTA është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
               name: "Jonas Reid",
               role: "Kliente",
               imageSrc: CLINIC_IMAGES.treatment,

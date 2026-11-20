@@ -50,7 +50,7 @@ export default function BeforeAfterPage() {
           <div className="mt-16">
             <TestimonialPortraitQuote
               label="Eksperiencat e pacienteve"
-              title="Vlerësimet për Skin Sence"
+              title="Vlerësimet për SkinSence By ARSA TOTA"
               items={[
                 {
                   quote: "Një qasje shumë profesionale dhe rezultate që ndihen natyrale. Rezultatet ndryshojnë nga personi në person.",
@@ -60,7 +60,7 @@ export default function BeforeAfterPage() {
                   imageAlt: "Mara Voss"
                 },
                 {
-                  quote: "Skin Sence është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
+                  quote: "SkinSence By ARSA TOTA është vendi ku ndjehem e sigurt për fytyrën time. Infermierja është e mrekullueshme dhe shumë e saktë.",
                   name: "Jonas Reid",
                   role: "Kliente",
                   imageSrc: CLINIC_IMAGES.facialCare,

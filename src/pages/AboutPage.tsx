@@ -27,7 +27,7 @@ export default function AboutPage() {
               01 / Rreth nesh
             </p>
             <h1 className="font-serif text-5xl md:text-7xl font-normal text-foreground leading-none tracking-tight">
-              Skin Sence
+              SkinSence By ARSA TOTA
               <span className="block italic text-[#C6A15B] text-4xl md:text-6xl mt-2 font-serif font-light">
                 Precizion, elegancë dhe përkushtim
               </span>
@@ -35,12 +35,12 @@ export default function AboutPage() {
             <p className="mt-8 text-xl font-serif text-foreground/90 leading-relaxed italic">
               "Sepse bukuria e vërtetë nuk ndryshohet. Ajo përsoset."
             </p>
-          </motion.div>
+            </motion.div>
 
-          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-border/80 pt-12">
+            <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-12 items-start border-t border-border/80 pt-12">
             <div className="space-y-6 text-foreground/80 leading-relaxed text-base">
               <p className="text-lg text-foreground font-sans">
-                Skin Sence është një klinikë estetike private në Tiranë, e themeluar nga infermierja estetike Arsa Tota.
+                SkinSence By ARSA TOTA është një klinikë estetike private në Tiranë, e themeluar nga infermierja estetike Arsa Tota.
               </p>
               <p>
                 Me më shumë se 10 vite përvojë klinike, Arsa Tota ofron kujdes profesional, individual dhe të saktë për çdo pacient që kërkon rigjallërimin natyral të lëkurës.
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   Arsa Tota
                 </h2>
                 <p className="text-lg md:text-xl text-[#C6A15B] font-serif italic mt-1 font-light">
-                  Infermiere Estetike & Themeluese e Skin Sence
+                  Infermiere Estetike & Themeluese e SkinSence By ARSA TOTA
                 </p>
               </div>
               <p className="text-sm font-sans text-foreground/80 max-w-md mt-4 md:mt-0 leading-relaxed">
@@ -111,7 +111,7 @@ export default function AboutPage() {
                 <div className="overflow-hidden aspect-[3/4]">
                   <img
                     src={CLINIC_IMAGES.founderRedCarpet}
-                    alt="Arsa Tota - Themeluesja e Skin Sence"
+                    alt="Arsa Tota - Themeluesja e SkinSence By ARSA TOTA"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                 </div>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                     Themeluese & Përfaqësuese
                   </p>
                   <p className="text-xs text-foreground/80 mt-3 leading-relaxed font-sans">
-                    Në tapetin e kuq të kongresit ndërkombëtar të teknologjisë estetike Alma, duke përfaqësuar me dinjitet standardet më të larta të klinikës Skin Sence.
+                    Në tapetin e kuq të kongresit ndërkombëtar të teknologjisë estetike Alma, duke përfaqësuar me dinjitet standardet më të larta të klinikës SkinSence By ARSA TOTA.
                   </p>
                 </div>
               </div>
@@ -181,7 +181,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-6">
                 <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e Skin Sence" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.founderRedCarpet} alt="Arsa Tota - Themeluesja e SkinSence By ARSA TOTA" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Arsa Tota — Themeluesja</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Në Kongresin Ndërkombëtar Alma</p>
@@ -205,7 +205,7 @@ export default function AboutPage() {
                   <img src={CLINIC_IMAGES.windowView} alt="Pamja nga Klinika" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Pamja nga Dritarja</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Skin Sence Tiranë</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">SkinSence By ARSA TOTA Tiranë</p>
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
@@ -240,9 +240,9 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#C6A15B]/50 bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.brandLogoSquare} alt="skinSence by Arsa Tota" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.brandLogoSquare} alt="SkinSence By ARSA TOTA" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
-                    <p className="font-serif text-lg text-foreground">skinSence by Arsa Tota</p>
+                    <p className="font-serif text-lg text-foreground">SkinSence By ARSA TOTA</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Identitet & Brand Zyrtar</p>
                   </div>
                 </div>
@@ -260,7 +260,7 @@ export default function AboutPage() {
                   <img src={CLINIC_IMAGES.clinicArchedWindow} alt="Studio me Dritare me Hark" className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Studio me Dritare me Hark</p>
-                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Ambienti Skin Sence Studio</p>
+                    <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Ambienti SkinSence By ARSA TOTA Studio</p>
                   </div>
                 </div>
                 <div className="border border-[#C6A15B] bg-[#201510] overflow-hidden group">
@@ -285,7 +285,7 @@ export default function AboutPage() {
                   </div>
                 </div>
                 <div className="border border-[#3b281d] bg-[#201510] overflow-hidden group">
-                  <img src={CLINIC_IMAGES.interior} alt="Klinika Skin Sence" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={CLINIC_IMAGES.interior} alt="Klinika SkinSence By ARSA TOTA" className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105" />
                   <div className="p-4 bg-[#201510]">
                     <p className="font-serif text-lg text-foreground">Ambienti Luksoz</p>
                     <p className="text-xs font-mono text-[#C6A15B] uppercase mt-1">Dizajn Dark-Brown</p>
