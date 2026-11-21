@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lora:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "./styles/animations.css";
 @import "./styles/masks.css";
@@ -45,8 +44,8 @@
   --accent-glass: color-mix(in srgb, var(--primary-cta) 20%, transparent);
   --model-tone: dark;
 
-  --font-heading: "Cormorant Garamond", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  --font-body: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: "Fraunces", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-label: "IBM Plex Mono", ui-monospace, Menlo, monospace;
   --heading-weight: 400;
   --heading-tracking: -0.045em;
@@ -130,14 +129,14 @@
     margin: 0;
     background-color: var(--background);
     color: var(--foreground);
-    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "DM Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 400;
     letter-spacing: -0.01em;
     min-height: 100vh;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Cormorant Garamond", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Fraunces", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: var(--heading-weight);
     letter-spacing: var(--heading-tracking);
     line-height: var(--heading-leading);
